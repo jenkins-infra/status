@@ -74,3 +74,6 @@ This is essentially a page with a date and title.
 
 ```
 
+=== Run locally
+
+If you have `Make` and `docker`, then you can run `make run`
