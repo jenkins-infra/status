@@ -1,0 +1,76 @@
+= README
+
+This is the Jenkins infrastructure project status page that generates status.jenkins.io.
+Feel free to annnounce futur maintainance window here.
+
+== HowTo Announce
+
+To announce a new event, you need to create a file in the directory `./content/issues` with a filename matching YYYY-MM-DD-event-tile.md.
+The content of this file depends on the kind of events.
+
+=== Maintenance Window
+
+If you are planning to take down a service to work on it, it's best to notify the community enough in advance with a maintaince
+window, as follow
+
+---
+title: Event Title
+date: YYYY-MM-DD HH:MM:SS
+resolved: true
+resolvedWhen: YYYY-MM-DD HH:MM:SS
+# Possible severity levels: down, disrupted, notice
+severity: notice
+
+affected:
+  - publick8s
+section: issue
+---
+
+Event description
+
+[Twitter](https://twitter.com/jenkinsci/status/...)
+[Discussion](https://groups.google.com/u/1/g/jenkins-infra/c/...)
+[Jira](https://issues.jenkins.io/)
+
+=== Incidents
+
+If you are aware of an incident which hasn't been posted here, feel free to create an incident as follow
+
+```
+---
+title: Incident Title
+date: YYYY-MM-DD HH:MM:SS
+resolved: false
+# Possible severity levels: down, disrupted, notice
+severity: disrupted
+affected:
+  - get.jenkins.io
+  - updates.jenkins.io
+  - pkg.jenkins.io
+section: issue
+---
+
+
+[Twitter](https://twitter.com/jenkinsci/status/...)
+[Discussion](https://groups.google.com/u/1/g/jenkins-infra/c/...)
+[Jira](https://issues.jenkins.io/...)
+```
+
+=== Informational posts
+
+If you need to inform our community but it doesn't involve any downtime then you can do as follow
+
+```
+---
+title: Testing New cState Features
+date: 2019-10-04 18:05:00
+informational: true
+section: issue
+---
+
+There is a new feature in cState version 4 that lets you make what are called _informational_ posts. The main difference is that the    re will be no _Unresolved_ or _Resolved in under a minute_ text on the pages.
+
+This is essentially a page with a date and title.
+
+```
+

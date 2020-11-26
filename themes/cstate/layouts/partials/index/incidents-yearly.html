@@ -1,0 +1,13 @@
+{{ $incidents := where .Site.RegularPages "Params.section" "issue" }}
+
+
+{{ range ($incidents.GroupByDate "2006") }}
+  
+  <p class="center archive__head" id="archive-{{ .Key }}"><a href="#archive-{{ .Key }}" class="no-underline"><strong>{{ .Key }}</strong>
+    <span class="faded">({{ len .Pages }})</span>
+  </a></p>
+  
+  {{ range .Pages }}
+    {{ .Render "small" }}
+  {{ end }}
+{{ end }}

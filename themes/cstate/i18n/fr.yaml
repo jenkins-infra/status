@@ -1,0 +1,159 @@
+# French language file for cState
+# Version 4.4
+
+- id: languageCode
+  translation: fr
+- id: languageName
+  translation: French
+- id: languageNameShort
+  translation: FRE
+
+##
+## INDEX.HTML
+##
+
+# Summary status message
+- id: isDown
+  translation: Nous faisons face à des problèmes majeurs
+- id: isDisrupted
+  translation: Nous faisons face à des perturbations
+- id: isNotice
+  translation: Merci de lire le détail
+- id: isOk
+  translation: Tous les systèmes sont opérationnels
+
+# No JS warning
+- id: noScriptingIntro
+  translation: Il semble que vous ayez désactivé JavaScript.
+- id: noScriptingLink
+  translation: Merci d'activer les scripts
+- id: noScriptingOutro
+  translation: pour améliorer votre expérience sur ce site Web.
+
+- id: thisIsDown
+  translation: Arrêté
+- id: thisIsDisrupted
+  translation: Perturbé
+- id: thisIsNotice
+  translation: Maintenance
+- id: thisIsOk
+  translation: Opérationnel
+
+# "Last checked" + "just now"
+- id: lastChecked
+  translation: Dernière vérification il y a # instead of someTimeAgo
+- id: justNow
+  translation: quelques secondes
+#- id: someTimeAgo
+#  translation: # Unable to translate
+
+# Example usage: `5` + `years`
+# Final result: 'Last checked 5 years ago'
+# Number goes before string
+# Use short variants until months
+- id: yearsAgo
+  translation: ans
+- id: monthsAgo
+  translation: mois
+- id: daysAgo
+  translation: j
+- id: hoursAgo
+  translation: h
+- id: minsAgo
+  translation: min
+- id: secondsAgo
+  translation: s
+
+- id: autoRefreshNotice
+  translation: Nous essaierons de rafraîchir la page toutes les 5 minutes
+
+# Incidents
+- id: incidents
+  translation: Incidents
+- id: incidentHistory
+  translation: Historique des incidents
+
+- id: resolved
+  translation: Résolu # if it's less than a min
+- id: inUnderAMinute
+  translation: en moins d'une minute # continuing the last string
+- id: resolvedAfter
+  translation: Résolu après # + 19 min
+- id: ofDowntime
+  translation: de temps d'arrêt
+
+- id: downtimeOngoing
+  translation: Non résolu
+
+
+- id: calmBeforeTheStorm
+  translation: Est-ce le calme avant la tempête ?
+- id: noIncidentsDesc
+  translation: Cette page d'état ne contient aucun incident enregistré. Ce peut être car la page d'état vient d'être configurée, car il n'y a eu aucun temps d'arrêt ou car aucun n'a été enregistré.
+
+
+- id: continueReading
+  translation: Lire la suite
+- id: prev
+  translation: Précédent
+- id: next
+  translation: Suivant
+
+##
+## OTHER
+##
+
+- id: goBack
+  translation: Retourner à
+- id: backToTop
+  translation: Retour en haut de page
+- id: poweredBy
+  translation: Propulsé par
+
+- id: notFound
+  translation: Il n'y a rien ici.
+- id: notFoundText
+  translation: C'est peut-être une erreur de notre part. Peut-être avons-nous déplacé une certaine ressource, ce qui l'a rendu indisponible. Il est également possible que la ressource que vous essayez de visualiser soit vide. Avez-vous pris le temps de vérifier le lien ?
+
+- id: rss
+  translation: S'abonner via RSS
+- id: toAllUpdates
+  translation: à toutes les mises à jour
+- id: or
+  translation: ou
+- id: onlyThisFeed
+  translation: seulement à ce flux
+
+##
+## v3
+##
+- id: entries
+  translation: rubriques
+- id: newestToOldest
+  translation: du plus récent au plus ancien
+  
+##
+## v4
+##
+- id: notFoundAffected
+  translation: Il semble que ce système n'existe pas ou qu'il n'a jamais eu de temps d'arrêt enregistré.
+
+##
+## v4.1
+## 
+
+- id: averageSystemsDowntime
+  translation: D'après les données moyennes, il semble que ce système ait été indisponible pendant environ
+- id: averageSystemsDowntimeSecondPart
+  translation: minutes.
+
+##
+## v4.4
+##
+
+- id: in
+  translation: dans
+- id: weeksAgo
+  translation: " sem"
+- id: yearAgo
+  translation: " années"
