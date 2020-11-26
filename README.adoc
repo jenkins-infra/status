@@ -76,4 +76,4 @@ This is essentially a page with a date and title.
 
 === Run locally
 
-If you have `Make` and `docker`, then you can run `make run`
+If you have `docker compose` installed, then you can run `docker-compose up`
