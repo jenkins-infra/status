@@ -1,0 +1,17 @@
+---
+title: "Services"
+---
+
+= Services
+
+The project relies on Datadog for monitoring and Pagerduty for alerting
+Feel free to look at one the following services to get more information.
+
+[%header,cols=3*]
+|===
+
+|link:/services/get-jenkins-io[get.jenkins.io]
+|link:/services/pkg-jenkins-io[pkg.jenkins.io]
+|link:/services/updates-jenkins-io[updates.jenkins.io]
+
+|===

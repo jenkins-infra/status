@@ -1,0 +1,10 @@
+version: '3'
+services:
+  status:
+    image: klakegg/hugo:0.78.2-asciidoctor
+    volumes:
+      - .:/src:ro
+    ports:
+        - 1313:1313
+    command: "serve --cleanDestinationDir --disableFastRender --path-warnings --print-mem --verbose --verboseLog"
+

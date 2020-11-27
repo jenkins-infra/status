@@ -1,0 +1,13 @@
+= updates.jenkins.io
+
+== Description
+
+"https://updates.jenkins.io[updates.jenkins.io]" is the service used by the Jenkins community to download and install Jenkins plugins from Jenkins itself.
+
+{{< rawhtml >}}
+<iframe src="https://jenkins.datadoghq.com/graph/embed?token=0348e57e2e926614650ce14ddc38f3a67bd20a3ebcc46301da9011191ed5b025&height=300&width=600&legend=true" width="600" height="300" frameborder="0"></iframe>
+{{< /rawhtml >}}
+
+== Links
+
+* https://github.com/jenkins-infra/update-center2/[jenkins-infra/updates-center2]
