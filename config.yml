@@ -143,20 +143,20 @@ params:
   #    untitled: true
   categories:
     - name: "[ a -> f ]"
-      closed: true
-      untitled: false
+      closed: false
+      untitled: true
     - name: "[ g -> l ]"
-      closed: true
-      untitled: false
+      closed: false
+      untitled: true
     - name: "[ m -> r ]"
-      closed: true
-      untitled: false
+      closed: false
+      untitled: true
     - name: "[ s -> x ]"
-      closed: true
-      untitled: false
+      closed: false
+      untitled: true
     - name: "[ y -> z ]"
-      closed: true
-      untitled: false
+      closed: false
+      untitled: true
 
   enableCustomHTML: true
 
