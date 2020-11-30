@@ -26,14 +26,14 @@ affected:
   - publick8s
 section: issue
 ---
-...
-```
 
 Event description
 
 [Twitter](https://twitter.com/jenkinsci/status/...)
 [Discussion](https://groups.google.com/u/1/g/jenkins-infra/c/...)
 [Jira](https://issues.jenkins.io/)
+
+```
 
 === Incidents
 
