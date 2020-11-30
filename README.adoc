@@ -13,6 +13,7 @@ The content of this file depends on the kind of events.
 If you are planning to take down service to work on it, it's best to notify the community enough in advance with a maintenance
 window, as follow
 
+```
 ---
 title: Event Title
 date: YYYY-MM-DD HH:MM:SS
@@ -25,6 +26,8 @@ affected:
   - publick8s
 section: issue
 ---
+...
+```
 
 Event description
 
