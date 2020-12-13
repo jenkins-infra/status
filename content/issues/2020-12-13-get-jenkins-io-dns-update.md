@@ -1,8 +1,8 @@
 ---
 title: get.jenkins.io dns update
-date: 2020-12-11 13:00:00
+date: 2020-12-13 13:20:00
 resolved: true
-resolvedWhen: 2020-12-11 13:30:00
+resolvedWhen: 2020-12-13 14:00:00
 # Possible severity levels: down, disrupted, notice
 severity: notice
 affected:
