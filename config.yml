@@ -247,11 +247,12 @@ params:
       category: "[ s -> x ]"
       partial: http_response_time/wiki.jenkins.io
 
-    - name: www.jenkins.io
+    - name: jenkins.io
       description: |
-        Service running our main website
+        Jenkins main website
       #category: Azure
       category: "[ s -> x ]"
+      partial: http_response_time/jenkins.io
 
 
   # What date format to use?
