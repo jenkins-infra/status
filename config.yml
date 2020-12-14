@@ -218,6 +218,7 @@ params:
         Service running plugins.jenkins.io
       #category: Azure
       category: "[ m -> r ]"
+      partial: http_response_time/plugins.jenkins.io
 
     - name: updates.jenkins.io
       category: AWS
