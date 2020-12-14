@@ -171,6 +171,7 @@ params:
         Service running our mirror archives
       #category: Rackspace
       category: "[ a -> f ]"
+      partial: http_response_time/archives.jenkins.io
 
     - name: get.jenkins.io
       description: |
