@@ -185,6 +185,7 @@ params:
         Service running our Jira
       #category: Linux Foundation
       category: "[ g -> l ]"
+      partial: http_response_time/issues.jenkins.io
 
     - name: javadoc.jenkins.io
       description: |
