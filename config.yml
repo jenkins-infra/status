@@ -168,14 +168,14 @@ params:
   systems:
     - name: archives.jenkins.io
       description: |
-        Service running our mirror archives
+        Jenkins mirror archives
       #category: Rackspace
       category: "[ a -> f ]"
       partial: http_response_time/archives.jenkins.io
 
     - name: ci.jenkins.io
       description: |
-        Jenkins instance to continuously test jenkins pull request.
+        Jenkins instance to continuously test jenkins pull requests.
       #category: Azure
       category: "[ a -> f ]"
       partial: http_response_time/ci.jenkins.io
@@ -189,21 +189,21 @@ params:
 
     - name: issues.jenkins.io
       description: |
-        Service running our Jira
+        Jenkins Jira
       #category: Linux Foundation
       category: "[ g -> l ]"
       partial: http_response_time/issues.jenkins.io
 
     - name: javadoc.jenkins.io
       description: |
-        Service our javadoc
+        Jenkins javadoc
       #category: Azure
       category: "[ g -> l ]"
       partial: http_response_time/javadoc.jenkins.io
 
     - name: ldap.jenkins.io
       description: |
-        Service running our ldap service
+        Jenkins ldap service
       # category: Azure
       category: "[ g -> l ]"
 
@@ -222,7 +222,7 @@ params:
 
     - name: plugins.jenkins.io
       description: |
-        Service running plugins.jenkins.io
+        Jenkins plugins site
       #category: Azure
       category: "[ m -> r ]"
       partial: http_response_time/plugins.jenkins.io
@@ -231,7 +231,7 @@ params:
       category: AWS
       category: "[ s -> x ]"
       description: |
-        Service used by Jenkins to update core and plugins versions
+        Jenkins update-center
       partial: http_response_time/updates.jenkins.io
 
     - name: vpn.jenkins.io
