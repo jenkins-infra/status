@@ -173,6 +173,13 @@ params:
       category: "[ a -> f ]"
       partial: http_response_time/archives.jenkins.io
 
+    - name: ci.jenkins.io
+      description: |
+        Jenkins instance to continuously test jenkins pull request.
+      #category: Azure
+      category: "[ a -> f ]"
+      partial: http_response_time/ci.jenkins.io
+
     - name: get.jenkins.io
       description: |
         Service that redirect download request to the closest mirror
