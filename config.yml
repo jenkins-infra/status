@@ -192,6 +192,7 @@ params:
         Service our javadoc
       #category: Azure
       category: "[ g -> l ]"
+      partial: http_response_time/javadoc.jenkins.io
 
     - name: ldap.jenkins.io
       description: |
