@@ -245,6 +245,7 @@ params:
         Service running our Confluence, service deprecated
       #category: OSUOSL
       category: "[ s -> x ]"
+      partial: http_response_time/wiki.jenkins.io
 
     - name: www.jenkins.io
       description: |
