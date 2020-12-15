@@ -168,9 +168,17 @@ params:
   systems:
     - name: archives.jenkins.io
       description: |
-        Service running our mirror archives
+        Jenkins mirror archives
       #category: Rackspace
       category: "[ a -> f ]"
+      partial: http_response_time/archives.jenkins.io
+
+    - name: ci.jenkins.io
+      description: |
+        Jenkins instance to continuously test jenkins pull requests.
+      #category: Azure
+      category: "[ a -> f ]"
+      partial: http_response_time/ci.jenkins.io
 
     - name: get.jenkins.io
       description: |
@@ -181,19 +189,21 @@ params:
 
     - name: issues.jenkins.io
       description: |
-        Service running our Jira
+        Jenkins Jira
       #category: Linux Foundation
       category: "[ g -> l ]"
+      partial: http_response_time/issues.jenkins.io
 
     - name: javadoc.jenkins.io
       description: |
-        Service our javadoc
+        Jenkins javadoc
       #category: Azure
       category: "[ g -> l ]"
+      partial: http_response_time/javadoc.jenkins.io
 
     - name: ldap.jenkins.io
       description: |
-        Service running our ldap service
+        Jenkins ldap service
       # category: Azure
       category: "[ g -> l ]"
 
@@ -212,15 +222,16 @@ params:
 
     - name: plugins.jenkins.io
       description: |
-        Service running plugins.jenkins.io
+        Jenkins plugins site
       #category: Azure
       category: "[ m -> r ]"
+      partial: http_response_time/plugins.jenkins.io
 
     - name: updates.jenkins.io
       category: AWS
       category: "[ s -> x ]"
       description: |
-        Service used by Jenkins to update core and plugins versions
+        Jenkins update-center
       partial: http_response_time/updates.jenkins.io
 
     - name: vpn.jenkins.io
@@ -234,12 +245,14 @@ params:
         Service running our Confluence, service deprecated
       #category: OSUOSL
       category: "[ s -> x ]"
+      partial: http_response_time/wiki.jenkins.io
 
-    - name: www.jenkins.io
+    - name: jenkins.io
       description: |
-        Service running our main website
+        Jenkins main website
       #category: Azure
       category: "[ s -> x ]"
+      partial: http_response_time/jenkins.io
 
 
   # What date format to use?
