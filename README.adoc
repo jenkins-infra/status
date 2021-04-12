@@ -16,9 +16,9 @@ window, as follow
 ```
 ---
 title: Event Title
-date: YYYY-MM-DD HH:MM:SS
+date: YYYY-MM-DD HH:MM:SS UTC
 resolved: true
-resolvedWhen: YYYY-MM-DD HH:MM:SS
+resolvedWhen: YYYY-MM-DD HH:MM:SS UTC
 # Possible severity levels: down, disrupted, notice
 severity: notice
 
@@ -42,7 +42,7 @@ If you are aware of an incident which hasn't been posted here, feel free to crea
 ```
 ---
 title: Incident Title
-date: YYYY-MM-DD HH:MM:SS
+date: YYYY-MM-DD HH:MM:SS UTC
 resolved: false
 # Possible severity levels: down, disrupted, notice
 severity: disrupted
@@ -66,7 +66,7 @@ If you need to inform our community but it doesn't involve any downtime then you
 ```
 ---
 title: Testing New cState Features
-date: 2019-10-04 18:05:00
+date: 2019-10-04 18:05:00 UTC
 informational: true
 section: issue
 ---
