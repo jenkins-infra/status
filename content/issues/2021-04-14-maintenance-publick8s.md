@@ -1,8 +1,8 @@
 ---
 title: AKS publick8s version update
-date: 2021-04-14 07:30:00 UTC
+date: 2021-04-14T07:30:00-00:00
 resolved: true
-resolvedWhen: 2021-04-14 10:00:00 UTC
+resolvedWhen: 2021-04-14T10:00:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: disrupted
 affected:
