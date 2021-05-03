@@ -10,6 +10,13 @@ affected:
 section: issue
 ---
 
+**Update 2021-05-03 11:58 UTC
+
+The operation is successful, we are now waiting several hours before deleting
+the temporary resources that we created during the transition to be sure
+that no DNS traffics is redirected to those locations.
+We didn't notice service downtime during the process.
+
 * [INFRA-2743](https://issues.jenkins.io/browse/INFRA-2743)
 * [NOTES](https://hackmd.io/cH4rbENeSOGLHD3rAgnXqQ?both)
 
