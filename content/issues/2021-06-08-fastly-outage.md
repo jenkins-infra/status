@@ -1,10 +1,10 @@
 ---
-title: Agents randomly disconnected on ci.jenkins.io
+title: Websites are down
 date: 2021-06-08T10:25:00-00:00
 resolved: false
 resolvedWhen:
 # Possible severity levels: down, disrupted, notice
-severity: disrupted
+severity: down
 affected:
   - *.jenkins.io
 section: issue
