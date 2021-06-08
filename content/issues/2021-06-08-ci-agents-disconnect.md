@@ -1,14 +1,20 @@
 ---
 title: Agents randomly disconnected on ci.jenkins.io
 date: 2021-06-08T05:35:00-00:00
-resolved: false
-resolvedWhen:
+resolved: true
+resolvedWhen: 2021-06-08T11:08:00-00:00
 # Possible severity levels: down, disrupted, notice
-severity: disrupted
+severity: down
 affected:
   - ci.jenkins.io
 section: issue
 ---
+
+**Update at 2021-06-08 11:20 UTC**
+
+ci.jenkins.io is back to normal since 2021-06-08 11:08 UTC after running a series of operations including a service full restart.
+
+**Initial Message at 2021-06-08 09:35 UTC**
 
 Agents are randomly disconnected on ci.jenkins.io with the following message in pipeline logs:
 
