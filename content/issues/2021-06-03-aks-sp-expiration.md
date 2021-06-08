@@ -2,7 +2,7 @@
 title: AKS (Azure Kubernetes Service) cluster `publick8s` principal security credential expired
 date: 2021-06-02T17:53:00-00:00
 resolved: true
-resolvedWhen:  2021-06-03T18:35:00-00:00
+resolvedWhen: 2021-06-03T18:35:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: disrupted
 affected:
