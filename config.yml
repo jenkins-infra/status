@@ -171,35 +171,35 @@ params:
         Jenkins mirror archives
       #category: Rackspace
       category: "[ a -> f ]"
-      partial: http_response_time/archives.jenkins.io
+      #partial: http_response_time/archives.jenkins.io
 
     - name: ci.jenkins.io
       description: |
         Jenkins instance to continuously test jenkins pull requests.
       #category: Azure
       category: "[ a -> f ]"
-      partial: http_response_time/ci.jenkins.io
+      # partial: http_response_time/ci.jenkins.io
 
     - name: get.jenkins.io
       description: |
         Service that redirect download request to the closest mirror
       #category: Azure
       category: "[ g -> l ]"
-      partial: http_response_time/get.jenkins.io
+      # partial: http_response_time/get.jenkins.io
 
     - name: issues.jenkins.io
       description: |
         Jenkins Jira
       #category: Linux Foundation
       category: "[ g -> l ]"
-      partial: http_response_time/issues.jenkins.io
+      # partial: http_response_time/issues.jenkins.io
 
     - name: javadoc.jenkins.io
       description: |
         Jenkins javadoc
       #category: Azure
       category: "[ g -> l ]"
-      partial: http_response_time/javadoc.jenkins.io
+      # partial: http_response_time/javadoc.jenkins.io
 
     - name: ldap.jenkins.io
       description: |
@@ -212,7 +212,7 @@ params:
       category: "[ m -> r ]"
       description: |
         Service used to download and install Jenkins distribution packages
-      partial: http_response_time/pkg.jenkins.io
+      # partial: http_response_time/pkg.jenkins.io
 
     - name: publick8s
       #category: Azure
@@ -225,14 +225,14 @@ params:
         Jenkins plugins site
       #category: Azure
       category: "[ m -> r ]"
-      partial: http_response_time/plugins.jenkins.io
+      # partial: http_response_time/plugins.jenkins.io
 
     - name: updates.jenkins.io
       category: AWS
       category: "[ s -> x ]"
       description: |
         Jenkins update-center
-      partial: http_response_time/updates.jenkins.io
+      # partial: http_response_time/updates.jenkins.io
 
     - name: vpn.jenkins.io
       description: |
@@ -245,14 +245,14 @@ params:
         Service running our Confluence, service deprecated
       #category: OSUOSL
       category: "[ s -> x ]"
-      partial: http_response_time/wiki.jenkins.io
+      # partial: http_response_time/wiki.jenkins.io
 
     - name: jenkins.io
       description: |
         Jenkins main website
       #category: Azure
       category: "[ s -> x ]"
-      partial: http_response_time/jenkins.io
+      # partial: http_response_time/jenkins.io
 
 
   # What date format to use?
@@ -344,8 +344,8 @@ params:
   customTabs:
     - name: Services
       link: /services
-  #    - name: Alerting
-  #      link: https://jenkins.pagerduty.com/
+    - name: Monitoring
+      link: /monitoring
 
   # Disable complex server-side
   # calculations that may impact
