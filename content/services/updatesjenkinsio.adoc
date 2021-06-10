@@ -1,3 +1,8 @@
+
+---
+title: "updates.jenkins.io"
+---
+
 = updates.jenkins.io
 
 == Description

@@ -1,0 +1,18 @@
+---
+title: "Monitoring"
+---
+
+= Monitoring
+
+The project relies on Datadog for monitoring Jenkins infrastructure.
+Here is a list of popular dashboard used.
+Feel free to request additional ones.
+
+[%header,cols=3*]
+|===
+
+|https://p.datadoghq.com/sb/0Igb9a-246463485af45b9c9d2347fd1b20f2a4[Services HTTP Response Time]
+|https://p.datadoghq.com/sb/0Igb9a-e6849e5e019250ef5aaea3589297fe8b[Latest Jenkins Core Packages available]
+|https://p.datadoghq.com/sb/0Igb9a-fcf64e96ade0909af164628af8d9643b[On Call incidents]
+
+|===

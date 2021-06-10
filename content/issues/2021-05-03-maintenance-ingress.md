@@ -1,6 +1,6 @@
 ---
 title: Nginx ingress upgrade
-date: 2021-05-03T011:00:00-00:00
+date: 2021-05-03T11:00:00-00:00
 resolved: true
 resolvedWhen: 2021-05-04T10:57:00-00:00
 # Possible severity levels: down, disrupted, notice

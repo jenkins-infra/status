@@ -1,0 +1,24 @@
+---
+title: "get.jenkins.io"
+---
+
+= get.jenkins.io
+
+== Description
+
+https://get.jenkins.io[get.jenkins.io] is the mirroring service used by the Jenkins project to redirect Jenkins community members to the closest mirror that contains plugins or jenkins core updates.
+It relies on https://github.com/etix/mirrorbits[mirrorbits] as the engine and a redis database to store its state.
+
+{{< rawhtml >}}
+<div class="embed_code_tmpl">
+
+<iframe src="https://jenkins.datadoghq.com/graph/embed?token=cb8681ca932361d518cf6732b1ca82fdb3453f1fba21bdd55bb3f306688b94dc&height=300&width=600&legend=false" width="600" height="300" frameBorder="0"></iframe>
+</div>
+{{< /rawhtml >}}
+
+== Links
+
+* https://github.com/jenkins-infra/charts/tree/master/charts/mirrorbits[Helm Chart]
+* https://github.com/jenkins-infra/charts/blob/master/helmfile.d/mirrorbits.yaml[Helmfile]
+* https://get.jenkins.io[get.jenkins.io]
+* https://issues.jenkins.io/secure/Dashboard.jspa[Issues]
