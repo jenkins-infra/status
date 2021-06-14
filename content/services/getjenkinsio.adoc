@@ -1,24 +1,20 @@
 ---
-title: "get.jenkins.io"
+title:  'get.jenkins.io'
+service:
+  url: 'https://get.jenkins.io'
+  description: |
+    This service is the mirroring service used by the Jenkins project to redirect Jenkins community members to the closest mirror that contains plugins or jenkins core updates.
+    It relies on [mirrorbits](https://github.com/etix/mirrorbits) as the engine and a redis database to store its state.
+  monitors:
+    - title: 'HTTP Response Time'
+      iframe: 'https://jenkins.datadoghq.com/graph/embed?token=cb8681ca932361d518cf6732b1ca82fdb3453f1fba21bdd55bb3f306688b94dc&height=300&width=600&legend=false'
+  links:
+    - name: 'Helm Chart'
+      url: 'https://github.com/jenkins-infra/charts/tree/master/charts/mirrorbits'
+    - name: 'Helmfile'
+      url: 'https://github.com/jenkins-infra/charts/blob/master/helmfile.d/mirrorbits.yaml'
+    - name: 'get.jenkins.io'
+      url:  'https://get.jenkins.io'
+    - name: 'Issues'
+      url: 'https://issues.jenkins.io/browse/INFRA-2989?jql=project%20%3D%20INFRA%20AND%20status%20in%20(Open%2C%20%22In%20Progress%22%2C%20Reopened)%20AND%20component%20%3D%20get.jenkins.io'
 ---
-
-= get.jenkins.io
-
-== Description
-
-https://get.jenkins.io[get.jenkins.io] is the mirroring service used by the Jenkins project to redirect Jenkins community members to the closest mirror that contains plugins or jenkins core updates.
-It relies on https://github.com/etix/mirrorbits[mirrorbits] as the engine and a redis database to store its state.
-
-{{< rawhtml >}}
-<div class="embed_code_tmpl">
-
-<iframe src="https://jenkins.datadoghq.com/graph/embed?token=cb8681ca932361d518cf6732b1ca82fdb3453f1fba21bdd55bb3f306688b94dc&height=300&width=600&legend=false" width="600" height="300" frameBorder="0"></iframe>
-</div>
-{{< /rawhtml >}}
-
-== Links
-
-* https://github.com/jenkins-infra/charts/tree/master/charts/mirrorbits[Helm Chart]
-* https://github.com/jenkins-infra/charts/blob/master/helmfile.d/mirrorbits.yaml[Helmfile]
-* https://get.jenkins.io[get.jenkins.io]
-* https://issues.jenkins.io/secure/Dashboard.jspa[Issues]
