@@ -1,0 +1,39 @@
+{{ partial "meta" . }}
+{{ $title := .Title }}
+
+  <body class="default list">
+    <header>
+      <div class="contain">
+        <a href="{{ .Site.BaseURL }}">← {{ T "goBack" }} <em>{{ .Site.Title }}</em></a>
+        <div class="padding"></div>
+        <div class="padding"></div>
+
+        <h1 class="clean">{{ $title }}</h1>
+
+        {{ range .Site.Params.systems }}
+          {{ if eq .name $title }}
+            {{ with .description }}
+              <p class="bold">{{ . }}</p>
+            {{ end }}
+          {{ end }}
+        {{ end }}
+
+        <small class="faded">{{ len .Pages }} {{ T "entries" }}, {{ T "newestToOldest" }}</small>
+
+        <!-- Following div block is not part of default cstate list.html layout -->
+        <div> 
+          {{ range .Paginator.Pages }}
+		    <button type="button"><a href={{ .URL }}>{{ .Title }}</a></button>
+		  {{ end }}
+        </div>
+
+        <div class="padding"></div>
+        <hr class="clean">
+      </div>
+    </header>
+
+    {{ partial "js" . }}
+    {{ partial "footer" . }}
+  </body>
+</html>
+
