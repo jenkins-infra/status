@@ -8,6 +8,12 @@ Feel free to announce future maintenance windows here.
 To announce a new event, you need to create a file in the directory `./content/issues` with a filename matching YYYY-MM-DD-event-tile.md.
 The content of this file depends on the kind of events.
 
+=== Add new service page
+
+`hugo new services/www-jenkins-io.md`
+
+Then open the file 'services/www-jenkins-io.md' and modify the parameters according your need.
+
 === Maintenance Window
 
 If you are planning to take down service to work on it, it's best to notify the community enough in advance with a maintenance
