@@ -2,8 +2,35 @@
     {{ .Title }}
   </h1>
 
+  <button type="button">
+    <a href="{{ .Params.service.url }}">Link</a>
+  </button>
 
-  {{ .Content }}
+  {{ if .Params.service.description }}
+  <h2>Description</h2>
+  <p>
+  {{ .Params.service.description }}
+  </p>
+  {{ end }}
+
+  <h2>Monitoring</h2>
+  {{ range $monitor := $.Params.service.monitors }}
+  <h3>{{ $monitor.title }}</h3>
+
+  <div class="embed_code_tmpl">
+    <iframe src="{{ $monitor.iframe }}" width="600" height="300" frameBorder="0"></iframe>
+  </div>
+  {{ end }}
+
+  <h2>Links</h2>
+
+  {{ range $link := $.Params.service.links}} 
+
+  <button type="button">
+    <a href="{{ $link.url}}">{{ $link.name }}</a>
+  </button>
+
+  {{ end }}
 
 <div class="padding"></div>
 

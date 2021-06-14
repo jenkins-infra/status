@@ -1,20 +1,19 @@
 ---
-title: "pkg.jenkins.io"
+title:  'pkg.jenkins.io'
+service:
+  url: 'https://pkg.jenkins.io'
+  description: |
+    This service is used by the Jenkins community to download and install Jenkins distribution packages.
+  monitors:
+    - title: 'HTTP Response Time'
+      iframe: 'https://jenkins.datadoghq.com/graph/embed?token=f479fdd13bbdd1d131fc2fc228379de844497d429a907bbf299fbe6d2d81f07c&height=300&width=600&legend=true'
+  links:
+    - name: 'jenkinsci/packaging'
+      url: 'https://github.com/jenkinsci/packaging'
+    - name: 'jenkins-infra/release'
+      url: 'https://github.com/jenkins-infra/release'
+    - name: 'pkg.jenkins.io'
+      url: 'https://pkg.jenkins.io'
+    - name: 'Issues'
+      url: 'https://issues.jenkins.io/browse/INFRA-2989?jql=project%20%3D%20INFRA%20AND%20status%20in%20(Open%2C%20%22In%20Progress%22%2C%20Reopened)%20AND%20component%20in%20(pkg.jenkins.io)'
 ---
-
-= pkg.jenkins.io
-
-== Description
-
-"link:https://pkg.jenkins.io[pkg.jenkins.io]" is the service used by the Jenkins community to download and install Jenkins distribution packages.
-
-{{< rawhtml >}}
-<iframe src="https://jenkins.datadoghq.com/graph/embed?token=f479fdd13bbdd1d131fc2fc228379de844497d429a907bbf299fbe6d2d81f07c&height=300&width=600&legend=true" width="600" height="300" frameborder="0"></iframe>
-{{< /rawhtml >}}
-
-== Links
-
-* https://github.com/jenkinsci/packaging[Jenkinsci/packaging]
-* https://github.com/jenkins-infra/release[Jenkins-infra/release]
-* https://pkg.jenkins.io[pkg.jenkins.io]
-* https://issues.jenkins.io/secure/Dashboard.jspa[Issues]

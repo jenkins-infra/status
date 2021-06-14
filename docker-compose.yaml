@@ -6,5 +6,5 @@ services:
       - .:/src:ro
     ports:
         - 1313:1313
-    command: "serve --cleanDestinationDir --disableFastRender --path-warnings --print-mem --verbose --verboseLog"
+    command: "serve --cleanDestinationDir --disableFastRender --path-warnings --print-mem --verbose --verboseLog --noHTTPCache"
 
