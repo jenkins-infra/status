@@ -1,0 +1,3 @@
+[submodule "themes/cstate"]
+	path = themes/cstate
+	url = git@github.com:cstate/cstate.git
