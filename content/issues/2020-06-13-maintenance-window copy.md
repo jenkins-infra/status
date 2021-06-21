@@ -1,14 +1,18 @@
 ---
 title: Maintenance Window on ci.jenkins.io
-date: 2021-06-21T11:00:00-00:00
-resolved: false
-resolvedWhen: 2021-06-21T12:00:00-00:00
+date: 2021-06-21T10:04:00-00:00
+resolved: true
+resolvedWhen: 2021-06-21T10:06:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: notice
 affected:
   - ci.jenkins.io
 section: issue
 ---
+
+Update: operation took 2 minutes, and restart was successful
+
+==============================
 
 A restart of ci.jenkins.io is planned with the following changes:
 
