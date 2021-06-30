@@ -6,6 +6,11 @@
 [build.environment]
     HUGO_VERSION = "0.79.0"
 
+[[headers]]
+    for = "/*.json"
+    [headers.values]
+      Access-Control-Allow-Origin = "*"
+
 [context.production.environment]
     HUGO_ENV = "production"
     NODE_ENV = "production"
