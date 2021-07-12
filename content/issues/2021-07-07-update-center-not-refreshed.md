@@ -1,14 +1,18 @@
 ---
 title: Update center content not refreshed, recent plugin releases not visible
 date: 2021-07-07T10:00:00-00:00
-resolved: false
-resolvedWhen:
+resolved: true
+resolvedWhen: 2021-07-12T07:02:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: notice
 affected:
   - updates.jenkins.io
 section: issue
 ---
+
+[update] Issues fixed.
+
+----
 
 [INFRA-3023](https://issues.jenkins.io/browse/INFRA-3023)
 [NOTES](https://hackmd.io/Yg8kpn5HSdyPJI7yVrV_7w)
