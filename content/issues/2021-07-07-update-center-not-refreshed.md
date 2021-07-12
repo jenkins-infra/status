@@ -10,16 +10,8 @@ affected:
 section: issue
 ---
 
-[update] Issues fixed.
+The update center had its content not refreshed from the 07th of July 2021
+until the 12th of July 2021.
 
-----
-
-[INFRA-3023](https://issues.jenkins.io/browse/INFRA-3023)
-[NOTES](https://hackmd.io/Yg8kpn5HSdyPJI7yVrV_7w)
-
-The [update center web page](https://updates.jenkins.io/latest/) has not been updated in the last 31 hours.
-It is missing the most recent release of the tuleap-api-plugin that was made about 23 hours ago.
-The update center link https://updates.jenkins.io/latest/tuleap-api.hpi should point to tuleap-api-plugin 2.3.0 but instead points to tuleap-api-plugin 2.2.2.
-
-The update center job trying to update the page reports a failure when downloading that plugin from artifactory.
-However, when I download interactively using the same URL, it succeeds.
+More details on what went wrong and how it was fixed can be found in the following page:
+[INFRA-3023](https://issues.jenkins.io/browse/INFRA-3023).
