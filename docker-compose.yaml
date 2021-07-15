@@ -1,7 +1,7 @@
 version: '3'
 services:
   status:
-    image: klakegg/hugo:0.78.2-asciidoctor
+    build: .
     volumes:
       - .:/src:ro
     ports:

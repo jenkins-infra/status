@@ -1,0 +1,106 @@
+---
+title: "[helmfile] Update version"
+sources:
+  # Get Hugo Version from Github Releases
+  hugoVersion:
+    kind: githubRelease
+    name: Get the latest helmfile version
+    spec:
+      owner: "gohugoio"
+      repository: "hugo"
+      token: "{{ requiredEnv .github.token }}"
+      username: "{{ .github.username }}"
+      # versionFilter can't be used until we
+      # fix https://github.com/updatecli/updatecli/issues/244
+      # versionFilter:
+      #  kind: semver
+      #  pattern: "~0"
+    transformers:
+      - trimPrefix: "v"
+  # Get current Hugo Version defined for Netlify
+  # so we can replace later on, the value by the updated one
+  hugoVersionFromNetlifyConfig:
+    kind: file
+    name: Get netlify configuration
+    spec:
+      file: netlify.toml
+    transformers:
+      - find: 'HUGO_VERSION = "(.*?)"'
+    scm:
+      github:
+        user: "{{ .github.user }}"
+        email: "{{ .github.email }}"
+        owner: "{{ .github.owner }}"
+        repository: "{{ .github.repository }}"
+        token: "{{ requiredEnv .github.token }}"
+        username: "{{ .github.username }}"
+        branch: "{{ .github.branch }}"
+  # Read netlify.toml content and update the HUGO_VERSION
+  # the content will be injected later on in the target
+  netlifyConfig:
+    kind: file
+    name: Get netlify configuration
+    depends_on:
+      - hugoVersion
+      - hugoVersionFromNetlifyConfig
+    spec:
+      file: netlify.toml
+    transformers:
+      - replacer:
+          from: '{{ source "hugoVersionFromNetlifyConfig" }}'
+          to: 'HUGO_VERSION = "{{ source "hugoVersion" }}"'
+    scm:
+      github:
+        user: "{{ .github.user }}"
+        email: "{{ .github.email }}"
+        owner: "{{ .github.owner }}"
+        repository: "{{ .github.repository }}"
+        token: "{{ requiredEnv .github.token }}"
+        username: "{{ .github.username }}"
+        branch: "{{ .github.branch }}"
+conditions:
+  # Test if docker image klakegg/hugo
+  docker:
+    name: "Test if docker Image klakegg/hugoPublished is available on docker Registry"
+    sourceID: hugoVersion
+    kind: dockerImage
+    spec:
+      image: "klakegg/hugo"
+    transformers:
+      - addSuffix: "-asciidoctor"
+targets:
+  # Update Dockerfile
+  updateDockerfileArgHelmfileVersion:
+    name: "Update default HUGO_VERSION value in the Dockerfile"
+    kind: dockerfile
+    sourceID: hugoVersion
+    spec:
+      file: Dockerfile
+      instruction:
+        keyword: "ARG"
+        matcher: "HUGO_VERSION"
+    scm:
+      github:
+        user: "{{ .github.user }}"
+        email: "{{ .github.email }}"
+        owner: "{{ .github.owner }}"
+        repository: "{{ .github.repository }}"
+        token: "{{ requiredEnv .github.token }}"
+        username: "{{ .github.username }}"
+        branch: "{{ .github.branch }}"
+  # Update netlify.toml
+  netlifyConfig:
+    kind: file
+    sourceID: netlifyConfig
+    name: Get netlify configuration
+    spec:
+      file: netlify.toml
+    scm:
+      github:
+        user: "{{ .github.user }}"
+        email: "{{ .github.email }}"
+        owner: "{{ .github.owner }}"
+        repository: "{{ .github.repository }}"
+        token: "{{ requiredEnv .github.token }}"
+        username: "{{ .github.username }}"
+        branch: "{{ .github.branch }}"

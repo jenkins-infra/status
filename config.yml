@@ -41,6 +41,18 @@
 # +------------------------------------------------------+ #
 ############################################################
 
+# For features like Last modified, you
+# need to use a Git repository. If you
+# are using Netlify, you are already
+# using Git (with GitHub, GitLab, etc)
+#
+# So, should Git information be used
+# for this website?
+#
+# We recommend to keep this at `true`.
+# BOOLEAN; `true`, `false`
+enableGitInfo: true
+
 # What is your status page called?
 # Shows up in the browser bar and meta tags
 title: Jenkins Status Page
@@ -157,6 +169,50 @@ params:
     - name: "[ y -> z ]"
       closed: false
       untitled: true
+
+  # Should relative time (x min ago) be used?
+  #
+  # IMPORTANT: In the frontmatter, the dates MUST be in
+  # the UTC time zone for this to work preperly. If you
+  # use Netlify CMS, all good — the CMS picks UTC time
+  # by default. Otherwise, there may be very inaccurate
+  # times if multiple time zones are in your issue files.
+  #
+  # FOR YOUR CONSIDERATION: This feature was introduced in
+  # v5. It may be a breaking change in the case when you
+  # wish to use relative time but old issues do not have
+  # UTC time (and therefore are out of sync by ±24 hours)
+  #
+  # Read the wiki for more:
+  # https://github.com/cstate/cstate/wiki/Customization#time
+  #
+  # If enabled, will display relative times in places like
+  # the incident history and summaries instead of using
+  # dateFormat and shortDateFormat (except for if you use
+  # the old shortcode).
+  #
+  # Default: `true`
+  # BOOLEAN; `true`, `false`
+  useRelativeTime: true
+
+  # If enabled, doesn't show seconds on relative times.
+  #
+  # With option ON (true):
+  # "Last checked <1 min ago"
+  #
+  # With option OFF (false; default):
+  # "Last checked 20s ago"
+  #
+  # Default: `false`
+  # BOOLEAN; `true`, `false`
+  skipSeconds: false
+
+  # Should there be an automatic "Last updated"
+  # text shown below issues?
+  #
+  # Default: `true`
+  # BOOLEAN; `true`, `false`
+  enableLastMod: true
 
   enableCustomHTML: true
 
@@ -393,7 +449,7 @@ params:
   # Default: `true`
   # BOOLEAN; `true`, `false`
   alwaysKeepBrandColor: true
-  
+
   # Introduced in v4.0.1 for consistent
   # site title text color.
   #
@@ -451,3 +507,5 @@ outputFormats:
   svg:
     isPlainText: true
     mediaType: image/svg+xml
+
+
