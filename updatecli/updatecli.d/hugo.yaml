@@ -10,9 +10,9 @@ sources:
       repository: "hugo"
       token: "{{ requiredEnv .github.token }}"
       username: "{{ .github.username }}"
-      # versionFilter can't be used until we 
+      # versionFilter can't be used until we
       # fix https://github.com/updatecli/updatecli/issues/244
-      #versionFilter:
+      # versionFilter:
       #  kind: semver
       #  pattern: "~0"
     transformers:
@@ -47,8 +47,8 @@ sources:
       file: netlify.toml
     transformers:
       - replacer:
-          from: '{{ pipeline "Sources.hugoVersionFromNetlifyConfig.Output" }}'  
-          to: 'HUGO_VERSION = "{{ pipeline "Sources.hugoVersion.Output" }}"'
+          from: '{{ source "hugoVersionFromNetlifyConfig" }}'
+          to: 'HUGO_VERSION = "{{ source "hugoVersion" }}"'
     scm:
       github:
         user: "{{ .github.user }}"
