@@ -1,10 +1,10 @@
 ---
-title: "[helmfile] Update version"
+title: "Bump Hugo version"
 sources:
   # Get Hugo Version from Github Releases
   hugoVersion:
     kind: githubRelease
-    name: Get the latest helmfile version
+    name: Get the latest hugo version
     spec:
       owner: "gohugoio"
       repository: "hugo"
