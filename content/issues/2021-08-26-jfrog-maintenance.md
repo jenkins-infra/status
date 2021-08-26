@@ -7,7 +7,6 @@ resolved: false
 severity: notice
 affected:
   - repo-jenkins-ci.org
-  - jenkins.io/downloads
 section: issue
 ---
 
