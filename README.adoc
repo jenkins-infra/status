@@ -85,4 +85,27 @@ This is essentially a page with a date and title.
 
 === Run locally
 
-If you have `docker compose` installed, then you can run `docker-compose up`
+You need the following tools to run the website locally (with live-reload):
+
+* git command line, in version 2.x
+* Docker Engine in version 19.03+
+* The `docker-compose` command line in version 1.26.x+
+
+Start by cloning locally the repository and retrieve the Hugo theme with the git sub module:
+
+[source,bash]
+--
+git clone https://github.com/jenkins-infra/status
+cd ./status
+git submodule init
+git submodule update --recursive
+--
+
+You can now execute the website locally and access it at http://localhost:1313/:
+
+[source,bash]
+--
+docker-compose up --build --force-recreate
+# ...
+# open http://localhost:1313
+--
