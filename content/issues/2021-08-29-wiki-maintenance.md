@@ -1,7 +1,7 @@
 ---
 title: Maintenance with downtime on https://wiki.jenkins.io (Jenkins wiki)
 date: 2021-08-29T18:00:00-00:00
-resolved: false
+resolved: true
 resolvedWhen: 2021-08-29T18:03:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: notice
