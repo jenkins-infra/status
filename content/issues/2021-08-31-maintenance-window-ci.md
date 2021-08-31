@@ -1,6 +1,6 @@
 ---
 title: Maintenance Window on ci.jenkins.io
-date: 2021-08-31T12:36-00:00
+date: 2021-08-31T12:36:00-00:00
 resolved: true
 resolvedWhen: 2021-08-31T14:14:08-00:00
 # Possible severity levels: down, disrupted, notice
