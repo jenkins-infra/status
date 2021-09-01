@@ -1,8 +1,8 @@
 ---
 title: Restart Jenkins wiki https://wiki.jenkins.io
 date: 2021-09-01T00:00:00-00:00
-resolved: false
-resolvedWhen: 2021-09-01T00:30:00-00:00
+resolved: true
+resolvedWhen: 2021-09-01T00:15:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: down
 affected:
