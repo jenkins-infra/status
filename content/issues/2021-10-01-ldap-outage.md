@@ -1,7 +1,7 @@
 ---
 title: LDAP server down
 date: 2021-10-01 00:00:00
-resolved: false
+resolved: true
 resolvedWhen: 2021-10-04 09:55:00
 severity: down
 
