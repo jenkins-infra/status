@@ -1,7 +1,7 @@
 ---
 title: Convert Jira database to utf8mb4
 date: 2021-10-05 16:00:00
-resolved: false
+resolved: true
 resolvedWhen: 2021-10-05 18:00:00
 severity: down
 
