@@ -1,6 +1,6 @@
 ---
 title: Maintenance Window on AKS
-date: 2021-10-25T12:00:00-00:00
+date: 2021-10-26T08:30:00-00:00
 resolved: false
 # resolvedWhen: 2021-10-25T12:30:00-00:00
 # Possible severity levels: down, disrupted, notice
@@ -22,6 +22,16 @@ affected:
   - uplink.jenkins.io
 section: issue
 ---
+
+
+[Edit - Monday 25th]
+
+We had to delay the operation as we discovered last minutes items to be changed.
+Next operation window is planned Tuesday, the 26th of October, at 08:30am UTC.
+
+------------------------------------------------------------------------------------------------------------
+
+[Initial Message - Friday 22th]
 
 A maintenance on the ingress controller of the Azure Kubernetes cluster `publick8s` is planned for the 25th of October, around 12:00am (noon) UTC.
 
