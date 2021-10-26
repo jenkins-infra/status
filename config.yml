@@ -303,7 +303,7 @@ params:
       category: "[ s -> x ]"
       # partial: http_response_time/wiki.jenkins.io
 
-    - name: jenkins.io
+    - name: www.jenkins.io
       description: |
         Jenkins main website
       #category: Azure
