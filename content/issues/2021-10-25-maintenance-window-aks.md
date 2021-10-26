@@ -1,8 +1,8 @@
 ---
 title: Maintenance Window on AKS
 date: 2021-10-26T08:30:00-00:00
-resolved: false
-# resolvedWhen: 2021-10-25T12:30:00-00:00
+resolved: true
+resolvedWhen: 2021-10-26T14:00:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: notice
 affected:
@@ -23,6 +23,11 @@ affected:
 section: issue
 ---
 
+[Final message]
+
+The maintenance has been completed, all services are operational.
+
+------------------------------------------------------------------------------------------------------------
 
 [Edit - Monday 25th]
 
