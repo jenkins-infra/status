@@ -8,7 +8,7 @@ severity: notice
 affected:
   - plugins.jenkins.io
   - plugins.origin.jenkins.io
-section: issue
+section: notice
 ---
 
 
