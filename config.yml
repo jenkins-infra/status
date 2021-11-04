@@ -284,7 +284,7 @@ params:
       # partial: http_response_time/plugins.jenkins.io
 
     - name: updates.jenkins.io
-      category: AWS
+      #category: AWS
       category: "[ s -> x ]"
       description: |
         Jenkins update-center
