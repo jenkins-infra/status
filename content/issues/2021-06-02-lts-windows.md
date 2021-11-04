@@ -17,4 +17,4 @@ Due to a technical issue in the release process, the Windows package for the LTS
 
 The release process has been fixed and executed successfully the 03rd of June 2021 at 06:50 UTC and finished at 07:02 UTC.
 
-At 07:00 UTC, the Windows package was available again from <https://jenkins.io/downloads>.
+At 07:00 UTC, the Windows package was available again from <https://jenkins.io/download>.
