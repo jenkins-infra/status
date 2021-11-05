@@ -10,6 +10,9 @@ affected:
 section: issue
 ---
 
-The SSL certificate on archives.jenkins.io was scheduled to expire in less than 10 days.
 The system needed an operating system restart to use the most recent kernel patch.
-Both issues resolved by installing updates and restarting the system.
+The operating system patch install and restart was completed with 60 seconds or less of downtime.
+
+The SSL certificate on archives.jenkins.io was scheduled to expire in less than 10 days.
+The issue was resolved by using the notes from a ci.jenkins.io certificate renewal failure that is recorded in the Jenkins infra runbook.
+No outage due to the SSL certificate renewal, just prevented an outage when the certificate would expire.
