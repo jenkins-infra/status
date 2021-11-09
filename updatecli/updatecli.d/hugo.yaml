@@ -2,7 +2,7 @@
 title: "Bump Hugo version"
 sources:
   # Get Hugo Version from Github Releases
-  hugoVersion:
+  getLatestHugoVersion:
     kind: githubRelease
     name: Get the latest hugo version
     spec:
@@ -10,75 +10,28 @@ sources:
       repository: "hugo"
       token: "{{ requiredEnv .github.token }}"
       username: "{{ .github.username }}"
-      # versionFilter can't be used until we
-      # fix https://github.com/updatecli/updatecli/issues/244
-      # versionFilter:
-      #  kind: semver
-      #  pattern: "~0"
+      versionFilter:
+        kind: latest
     transformers:
       - trimPrefix: "v"
-  # Get current Hugo Version defined for Netlify
-  # so we can replace later on, the value by the updated one
-  hugoVersionFromNetlifyConfig:
-    kind: file
-    name: Get netlify configuration
-    spec:
-      file: netlify.toml
-    transformers:
-      - find: 'HUGO_VERSION = "(.*?)"'
-    scm:
-      github:
-        user: "{{ .github.user }}"
-        email: "{{ .github.email }}"
-        owner: "{{ .github.owner }}"
-        repository: "{{ .github.repository }}"
-        token: "{{ requiredEnv .github.token }}"
-        username: "{{ .github.username }}"
-        branch: "{{ .github.branch }}"
-  # Read netlify.toml content and update the HUGO_VERSION
-  # the content will be injected later on in the target
-  netlifyConfig:
-    kind: file
-    name: Get netlify configuration
-    depends_on:
-      - hugoVersion
-      - hugoVersionFromNetlifyConfig
-    spec:
-      file: netlify.toml
-    transformers:
-      - replacer:
-          from: '{{ source "hugoVersionFromNetlifyConfig" }}'
-          to: 'HUGO_VERSION = "{{ source "hugoVersion" }}"'
-    scm:
-      github:
-        user: "{{ .github.user }}"
-        email: "{{ .github.email }}"
-        owner: "{{ .github.owner }}"
-        repository: "{{ .github.repository }}"
-        token: "{{ requiredEnv .github.token }}"
-        username: "{{ .github.username }}"
-        branch: "{{ .github.branch }}"
 conditions:
-  # Test if docker image klakegg/hugo
-  docker:
-    name: "Test if docker Image klakegg/hugoPublished is available on docker Registry"
-    sourceID: hugoVersion
+  checkIfDockerImageIsPublished:
+    transformers:
+      - addSuffix: "-asciidoctor"
+    name: "Test if the docker image 'klakegg/hugo' is available on the Dockerhub registry"
     kind: dockerImage
     spec:
       image: "klakegg/hugo"
-    transformers:
-      - addSuffix: "-asciidoctor"
 targets:
-  # Update Dockerfile
-  updateDockerfileArgHelmfileVersion:
-    name: "Update default HUGO_VERSION value in the Dockerfile"
-    kind: dockerfile
-    sourceID: hugoVersion
+  updateDockerComposeFile:
+    transformers:
+      - addSuffix: "-ext-asciidoctor"
+      - addPrefix: "klakegg/hugo:"
+    name: "Update Hugo version in docker image name in docker-compose.yaml"
+    kind: yaml
     spec:
-      file: Dockerfile
-      instruction:
-        keyword: "ARG"
-        matcher: "HUGO_VERSION"
+      file: docker-compose.yaml
+      key: services.status.image
     scm:
       github:
         user: "{{ .github.user }}"
@@ -88,13 +41,28 @@ targets:
         token: "{{ requiredEnv .github.token }}"
         username: "{{ .github.username }}"
         branch: "{{ .github.branch }}"
-  # Update netlify.toml
-  netlifyConfig:
+  updateNetlifyConfig:
     kind: file
-    sourceID: netlifyConfig
-    name: Get netlify configuration
+    name: "Update Hugo version in the Netlify configuration file"
     spec:
       file: netlify.toml
+      matchPattern: 'HUGO_VERSION = .*'
+      content: 'HUGO_VERSION = "{{ source `getLatestHugoVersion` }}"'
+    scm:
+      github:
+        user: "{{ .github.user }}"
+        email: "{{ .github.email }}"
+        owner: "{{ .github.owner }}"
+        repository: "{{ .github.repository }}"
+        token: "{{ requiredEnv .github.token }}"
+        username: "{{ .github.username }}"
+        branch: "{{ .github.branch }}"
+  updateGitHubWorkflow:
+    kind: yaml
+    name: "Update Hugo version in the Netlify configuration file"
+    spec:
+      file: .github/workflows/hugo.yaml
+      key: jobs.build.steps[1].with.version
     scm:
       github:
         user: "{{ .github.user }}"

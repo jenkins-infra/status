@@ -16,5 +16,5 @@ jobs:
       uses: klakegg/actions-hugo@1.0.0
       with:
         version: 0.87.0
-         # "ext-" for the Hugo extended edition including git (https://github.com/klakegg/docker-hugo/blob/master/README.md#hugo-extended-edition)
+        # "ext-" for the Hugo extended edition including git (https://github.com/klakegg/docker-hugo/blob/master/README.md#hugo-extended-edition)
         image: ext-asciidoctor
