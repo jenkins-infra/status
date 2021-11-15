@@ -1,5 +1,6 @@
 ---
 title: "Bump Hugo version"
+pipelineId: "bumphugo"
 sources:
   # Get Hugo Version from Github Releases
   getLatestHugoVersion:
@@ -14,19 +15,21 @@ sources:
         kind: latest
     transformers:
       - trimPrefix: "v"
+
 conditions:
   checkIfDockerImageIsPublished:
     transformers:
-      - addSuffix: "-asciidoctor"
+      - addSuffix: "-ext-asciidoctor"
     name: "Test if the docker image 'klakegg/hugo' is available on the Dockerhub registry"
     kind: dockerImage
     spec:
       image: "klakegg/hugo"
+
 targets:
   updateDockerComposeFile:
     transformers:
-      - addSuffix: "-ext-asciidoctor"
       - addPrefix: "klakegg/hugo:"
+      - addSuffix: "-ext-asciidoctor"
     name: "Update Hugo version in docker image name in docker-compose.yaml"
     kind: yaml
     spec:
