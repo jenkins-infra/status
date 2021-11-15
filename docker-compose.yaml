@@ -2,7 +2,7 @@ version: '3'
 services:
   status:
     # "ext-" for the Hugo extended edition including git (https://github.com/klakegg/docker-hugo/blob/master/README.md#hugo-extended-edition)
-    image: klakegg/hugo:0.87.0-ext-asciidoctor
+    image: klakegg/hugo:0.89.2-ext-asciidoctor
     volumes:
       - .:/src
     ports:
