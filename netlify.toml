@@ -4,7 +4,7 @@
     functions = "functions"
 
 [build.environment]
-    HUGO_VERSION = "0.87.0"
+    HUGO_VERSION = "0.89.2"
 
 [[headers]]
     for = "/*.json"
@@ -14,7 +14,7 @@
 [context.production.environment]
     HUGO_ENV = "production"
     NODE_ENV = "production"
-    HUGO_VERSION = "0.87.0"
+    HUGO_VERSION = "0.89.2"
 
 [context.deploy-preview]
     command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
