@@ -6,8 +6,20 @@ resolved: false
 # Possible severity levels: down, disrupted, notice
 severity: notice
 affected:
-  - publick8s
-  - cik8s
+  - accounts.jenkins.io
+  - beta.accounts.jenkins.io
+  - customize.jenkins.io
+  - get.jenkins.io
+  - incrementals.jenkins.io
+  - infra.ci.jenkins.io
+  - javadoc.jenkins.io
+  - jenkins-wiki-exporter.jenkins.io
+  - ldap.jenkins.io
+  - plugins.jenkins.io
+  - release.ci.jenkins.io
+  - reports.jenkins.io
+  - www.jenkins.io
+  - uplink.jenkins.io
 section: issue
 ---
 
