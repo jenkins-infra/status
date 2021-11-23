@@ -31,7 +31,8 @@ We'll do an AKS and EKS clusters upgrade from 1.19 to 1.20
 
 The service `ldap.jenkins.io` service might have a downtime due to its PV.  
 
-Other services might have a downtime too if their probes take more than one second to respond due to the new `timeoutPeriod` enforced default value.
+Other services might have a downtime too if their probes take more than one second to respond due to the new `timeoutPeriod` enforced default value.  
+Note: the offical Jenkins helm chart we're using has already [set the default timeout period to 5 seconds](https://github.com/jenkinsci/helm-charts/blob/main/charts/jenkins/values.yaml#L150-L168)
 
 Apart from that, no outage is expected, but there could be an impact (1-2 min outage) on the following services if there is an unexpected upgrade issue:
   - accounts.jenkins.io
