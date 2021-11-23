@@ -27,7 +27,24 @@ section: issue
 [Notes](https://hackmd.io/DIOeeOYVTm6pJeh_dJ9X_A?view)
 
 [Initial Message]
-We'll do an AKS and EKS clusters upgrade.
+We'll do an AKS and EKS clusters upgrade from 1.19 to 1.20
 
 The service `ldap.jenkins.io` service might have a downtime due to its PV.  
+
 Other services might have a downtime too if their probes take more than one second to respond due to the new `timeoutPeriod` enforced default value.
+
+Apart from that, no outage is expected, but there could be an impact (1-2 min outage) on the following service if there is an unexpected upgrade issue:
+  - accounts.jenkins.io
+  - beta.accounts.jenkins.io
+  - customize.jenkins.io
+  - get.jenkins.io
+  - incrementals.jenkins.io
+  - infra.ci.jenkins.io
+  - javadoc.jenkins.io
+  - jenkins-wiki-exporter.jenkins.io
+  - ldap.jenkins.io
+  - plugins.jenkins.io
+  - release.ci.jenkins.io
+  - reports.jenkins.io
+  - www.jenkins.io
+  - uplink.jenkins.io
