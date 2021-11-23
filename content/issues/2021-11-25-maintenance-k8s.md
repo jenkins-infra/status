@@ -33,7 +33,7 @@ The service `ldap.jenkins.io` service might have a downtime due to its PV.
 
 Other services might have a downtime too if their probes take more than one second to respond due to the new `timeoutPeriod` enforced default value.
 
-Apart from that, no outage is expected, but there could be an impact (1-2 min outage) on the following service if there is an unexpected upgrade issue:
+Apart from that, no outage is expected, but there could be an impact (1-2 min outage) on the following services if there is an unexpected upgrade issue:
   - accounts.jenkins.io
   - beta.accounts.jenkins.io
   - customize.jenkins.io
