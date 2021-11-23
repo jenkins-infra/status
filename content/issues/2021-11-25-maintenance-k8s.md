@@ -27,9 +27,9 @@ section: issue
 [Notes](https://hackmd.io/DIOeeOYVTm6pJeh_dJ9X_A?view)
 
 [Initial Message]
-We'll do an AKS and EKS clusters upgrade from 1.19 to 1.20 this Thurday, 25th of November 2021, starting at 08:00 UTC
+We'll do an AKS and EKS clusters upgrade from 1.19 to 1.20 this Thurday, 25th of November 2021, starting at 08:00 UTC.
 
-The service `ldap.jenkins.io` service might have a downtime due to its PV.  
+The service `ldap.jenkins.io` service might have a downtime due to its PV.
 
 Other services might have a downtime too if their probes take more than one second to respond due to the new `timeoutPeriod` enforced default value.  
 Note: the offical Jenkins helm chart we're using has already [set the default timeout period to 5 seconds](https://github.com/jenkinsci/helm-charts/blob/main/charts/jenkins/values.yaml#L150-L168)
