@@ -27,7 +27,7 @@ section: issue
 [Notes](https://hackmd.io/DIOeeOYVTm6pJeh_dJ9X_A?view)
 
 [Initial Message]
-We'll do an AKS and EKS clusters upgrade from 1.19 to 1.20
+We'll do an AKS and EKS clusters upgrade from 1.19 to 1.20 this Thurday, 25th of November 2021, starting at 08:00 UTC
 
 The service `ldap.jenkins.io` service might have a downtime due to its PV.  
 
