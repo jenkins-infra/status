@@ -26,6 +26,9 @@ section: issue
 [INFRA-3118](https://issues.jenkins.io/browse/INFRA-3118)
 [Notes](https://hackmd.io/DIOeeOYVTm6pJeh_dJ9X_A?view)
 
+[Final Message]
+The upgrade is finished without any incident, all services are up and running.
+
 [Initial Message]
 We'll do an AKS and EKS clusters upgrade from 1.19 to 1.20 this Thursday, 25th of November 2021, starting at 08:00 UTC.
 
