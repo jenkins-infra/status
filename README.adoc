@@ -101,11 +101,11 @@ git submodule init
 git submodule update --recursive
 --
 
-You can now execute the website locally and access it at http://localhost:1313/:
+You can now execute the website locally:
 
 [source,bash]
 --
 docker-compose up --build --force-recreate
-# ...
-# open http://localhost:1313
 --
+
+You can then access it at http://localhost:1313/.
