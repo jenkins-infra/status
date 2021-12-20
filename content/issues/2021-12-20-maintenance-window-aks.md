@@ -1,7 +1,7 @@
 ---
 title: Maintenance Window on AKS
 date: 2021-12-20T11:00:00-00:00
-resolved: false
+resolved: true
 resolvedWhen: 2021-12-20T11:30:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: notice
