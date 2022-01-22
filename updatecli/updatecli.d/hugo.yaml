@@ -1,29 +1,41 @@
----
 title: "Bump Hugo version"
-pipelineId: "bumphugo"
+
+scms:
+  default:
+    kind: github
+    spec:
+      user: "{{ .github.user }}"
+      email: "{{ .github.email }}"
+      owner: "{{ .github.owner }}"
+      repository: "{{ .github.repository }}"
+      token: "{{ requiredEnv .github.token }}"
+      username: "{{ .github.username }}"
+      branch: "{{ .github.branch }}"
+
 sources:
   # Get Hugo Version from Github Releases
-  getLatestHugoVersion:
+  getLatestDockerHugoVersion:
     kind: githubRelease
     name: Get the latest hugo version
     spec:
-      owner: "gohugoio"
-      repository: "hugo"
+      owner: "klakegg"
+      repository: "docker-hugo"
       token: "{{ requiredEnv .github.token }}"
       username: "{{ .github.username }}"
       versionFilter:
         kind: latest
-    transformers:
-      - trimPrefix: "v"
 
 conditions:
   checkIfDockerImageIsPublished:
+    name: "Test if the docker image 'klakegg/hugo' is available on the Dockerhub registry"
     transformers:
       - addSuffix: "-ext-asciidoctor"
-    name: "Test if the docker image 'klakegg/hugo' is available on the Dockerhub registry"
+    sourceID: getLatestDockerHugoVersion
     kind: dockerImage
     spec:
       image: "klakegg/hugo"
+      architecture: amd64
+      # Tag comes from the sourceID (+ transformation)
 
 targets:
   updateDockerComposeFile:
@@ -35,43 +47,32 @@ targets:
     spec:
       file: docker-compose.yaml
       key: services.status.image
-    scm:
-      github:
-        user: "{{ .github.user }}"
-        email: "{{ .github.email }}"
-        owner: "{{ .github.owner }}"
-        repository: "{{ .github.repository }}"
-        token: "{{ requiredEnv .github.token }}"
-        username: "{{ .github.username }}"
-        branch: "{{ .github.branch }}"
+    scmID: default
   updateNetlifyConfig:
     kind: file
     name: "Update Hugo version in the Netlify configuration file"
     spec:
       file: netlify.toml
       matchPattern: 'HUGO_VERSION = .*'
-      content: 'HUGO_VERSION = "{{ source `getLatestHugoVersion` }}"'
-    scm:
-      github:
-        user: "{{ .github.user }}"
-        email: "{{ .github.email }}"
-        owner: "{{ .github.owner }}"
-        repository: "{{ .github.repository }}"
-        token: "{{ requiredEnv .github.token }}"
-        username: "{{ .github.username }}"
-        branch: "{{ .github.branch }}"
+      content: 'HUGO_VERSION = "{{ source `getLatestDockerHugoVersion` }}"'
+    scmID: default
   updateGitHubWorkflow:
     kind: yaml
     name: "Update Hugo version in the Netlify configuration file"
     spec:
       file: .github/workflows/hugo.yaml
       key: jobs.build.steps[1].with.version
-    scm:
-      github:
-        user: "{{ .github.user }}"
-        email: "{{ .github.email }}"
-        owner: "{{ .github.owner }}"
-        repository: "{{ .github.repository }}"
-        token: "{{ requiredEnv .github.token }}"
-        username: "{{ .github.username }}"
-        branch: "{{ .github.branch }}"
+    scmID: default
+
+pullrequests:
+  chart:
+    kind: github
+    scmID: default
+    targets:
+      - updateDockerComposeFile
+      - updateNetlifyConfig
+      - updateGitHubWorkflow
+    spec:
+      labels:
+        - dependencies
+        - hugo
