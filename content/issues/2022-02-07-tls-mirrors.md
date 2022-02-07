@@ -12,7 +12,7 @@ section: issue
 ---
 
 [Final message]
-The datadog alert on the https call [has been removed](https://github.com/jenkins-infra/datadog/pull/56) as this service as never been served as https
+The datadog alert on the https call [has been removed](https://github.com/jenkins-infra/datadog/pull/56) as this service as never been served as https.
 
 [Initial message]
 The services mirrors.jenkins-ci.org and mirrors.jenkins.io shows an error `SSL_ERROR_BAD_CERT_DOMAIN` due to a certificate generated with the wrong name.
