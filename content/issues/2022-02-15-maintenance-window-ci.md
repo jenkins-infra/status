@@ -1,9 +1,9 @@
 ---
 title: Maintenance window on ci.jenkins.io
 # Insert actual start once the maintenance window opens
-date: 2022-02-16T13:30:00-00:00
+date: 2022-02-15T13:30:00-00:00
 resolved: true
-resolvedWhen: 2022-02-16T13:45:00-00:00
+resolvedWhen: 2022-02-15T13:45:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: down
 affected:
