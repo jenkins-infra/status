@@ -11,3 +11,5 @@ section: issue
 ---
 
 The 2022-02-15 at 13:30 UTC, expect an outage on ci.jenkins to update the plugins installed on this instance.
+
+Security advisory is available at <https://www.jenkins.io/security/advisory/2022-02-15/>.
