@@ -1,7 +1,7 @@
 ---
 title: Maintenance Window on AKS
 date: 2022-03-08T08:00:00-00:00
-resolved: false
+resolved: true
 resolvedWhen: 2022-03-08T11:00:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: notice
@@ -22,6 +22,10 @@ affected:
   - uplink.jenkins.io
 section: issue
 ---
+
+[Final Message]
+
+Maintenance finished. LDAP was unavailable during restart from 10:10 UTC until 10:15 UTC as per <https://github.com/jenkins-infra/helpdesk/issues/2810>.
 
 [Initial Message]
 
