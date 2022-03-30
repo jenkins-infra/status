@@ -13,4 +13,4 @@ section: issue
 [Initial message]
 We were alerted in parallel by some users and our monitoring that JFrog Artificatory service (repo.jenkins-ci.org) is slow to answer to requests, leading to slowness when downloading artifacts, and eventually build failures due to timeout.
 
-We are working on it, see https://github.com/jenkins-infra/helpdesk/issues/2849 for details.
+We are working on it, see https://github.com/jenkins-infra/helpdesk/issues/2849 for more details.
