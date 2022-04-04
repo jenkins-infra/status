@@ -2,7 +2,7 @@
 title: Artifactory is slow
 date: 2022-04-04T07:50:00-00:00
 # resolvedWhen: 2022-03-24T22:38:00-00:00
-# resolved: true
+resolved: false
 # Possible severity levels: down, disrupted, notice
 severity: disrupted
 affected:
