@@ -296,6 +296,12 @@ params:
       #category: Azure
       category: "[ s -> x ]"
 
+    - name: weekly.ci.jenkins.io
+      description: |
+        Jenkins instance demonstrating features running on weekly releases
+      #category: Azure
+      category: "[ s -> x ]"
+
     - name: wiki.jenkins.io
       description: |
         Service running our Confluence, service deprecated
