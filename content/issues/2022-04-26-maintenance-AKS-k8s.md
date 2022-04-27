@@ -23,7 +23,7 @@ affected:
 section: issue
 ---
 
-We'll do an AKS clusters upgrade from 1.20 to 1.21 this Wednesday, 27th of April 2022, starting at 9:00 UTC.
+We'll do an AKS clusters upgrade from 1.20 to 1.21 this Wednesday, 27th of April 2022, starting at 12:00 UTC.
 
 See more at https://github.com/jenkins-infra/helpdesk/issues/2866
 
