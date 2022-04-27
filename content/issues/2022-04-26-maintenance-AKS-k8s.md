@@ -1,6 +1,6 @@
 ---
 title: AKS publick8s version update
-date: 2022-04-27T09:00:00-00:00
+date: 2022-04-27T11:00:00-00:00
 resolved: false
 # resolvedWhen: 2021-06-17T09:45:00-00:00
 # Possible severity levels: down, disrupted, notice
@@ -23,7 +23,7 @@ affected:
 section: issue
 ---
 
-We'll do an AKS clusters upgrade from 1.20 to 1.21 this Wednesday, 27th of April 2022, starting at 12:00 UTC.
+We'll do an AKS clusters upgrade from 1.20 to 1.21 this Wednesday, 27th of April 2022, starting at 11:00 UTC.
 
 See more at https://github.com/jenkins-infra/helpdesk/issues/2866
 
