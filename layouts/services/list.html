@@ -21,10 +21,12 @@
         <small class="faded">{{ len .Pages }} {{ T "entries" }}, {{ T "newestToOldest" }}</small>
 
         <!-- Following div block is not part of default cstate list.html layout -->
-        <div> 
+        <div>
           {{ range .Paginator.Pages }}
-		    <button type="button"><a href={{ .URL }}>{{ .Title }}</a></button>
-		  {{ end }}
+          <button type="button">
+            <a href="{{ .Params.Service.URL }}">{{ .Title }}</a>
+          </button>
+          {{ end }}
         </div>
 
         <div class="padding"></div>
@@ -36,4 +38,3 @@
     {{ partial "footer" . }}
   </body>
 </html>
-

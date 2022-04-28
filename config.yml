@@ -316,7 +316,6 @@ params:
       category: "[ s -> x ]"
       # partial: http_response_time/jenkins.io
 
-
   # What date format to use?
   #
   # Hugo formatting docs:
@@ -397,7 +396,6 @@ params:
     Feel free to contribute to this page [here](https://github.com/jenkins-infra/status)
 
     For further questions, you can to contact us on our mailing list [here](https://groups.google.com/u/1/g/jenkins-infra)
-
 
   # Tabs on homepage
   # Uncomment to enable.
@@ -514,4 +512,12 @@ outputFormats:
     isPlainText: true
     mediaType: image/svg+xml
 
-
+security:
+  # allow = ['^dart-sass-embedded$', '^go$', '^npx$', '^postcss$']
+  exec:
+    allow:
+      - ^asciidoctor$
+      - ^dart-sass-embedded$
+      - ^go$
+      - ^npx$
+      - ^postcss$

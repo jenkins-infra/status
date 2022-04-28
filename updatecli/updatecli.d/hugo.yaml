@@ -15,27 +15,27 @@ scms:
 sources:
   # Get Hugo Version from Github Releases
   getLatestDockerHugoVersion:
-    kind: githubRelease
+    kind: githubrelease
     name: Get the latest hugo version
     spec:
       owner: "klakegg"
       repository: "docker-hugo"
       token: "{{ requiredEnv .github.token }}"
       username: "{{ .github.username }}"
-      versionFilter:
+      versionfilter:
         kind: latest
 
 conditions:
   checkIfDockerImageIsPublished:
-    name: "Test if the docker image 'klakegg/hugo' is available on the Dockerhub registry"
+    name: "Test if the docker image 'klakegg/hugo' is available on the DockerHub registry"
     transformers:
       - addSuffix: "-ext-asciidoctor"
-    sourceID: getLatestDockerHugoVersion
-    kind: dockerImage
+    sourceid: getLatestDockerHugoVersion
+    kind: dockerimage
     spec:
       image: "klakegg/hugo"
       architecture: amd64
-      # Tag comes from the sourceID (+ transformation)
+      # Tag comes from the sourceid (+ transformation)
 
 targets:
   updateDockerComposeFile:
@@ -47,27 +47,27 @@ targets:
     spec:
       file: docker-compose.yaml
       key: services.status.image
-    scmID: default
+    scmid: default
   updateNetlifyConfig:
     kind: file
     name: "Update Hugo version in the Netlify configuration file"
     spec:
       file: netlify.toml
-      matchPattern: 'HUGO_VERSION = .*'
+      matchpattern: "HUGO_VERSION = .*"
       content: 'HUGO_VERSION = "{{ source `getLatestDockerHugoVersion` }}"'
-    scmID: default
+    scmid: default
   updateGitHubWorkflow:
     kind: yaml
     name: "Update Hugo version in the Netlify configuration file"
     spec:
       file: .github/workflows/hugo.yaml
       key: jobs.build.steps[1].with.version
-    scmID: default
+    scmid: default
 
 pullrequests:
   chart:
     kind: github
-    scmID: default
+    scmid: default
     targets:
       - updateDockerComposeFile
       - updateNetlifyConfig

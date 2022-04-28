@@ -1,10 +1,9 @@
-version: '3'
 services:
   status:
     # "ext-" for the Hugo extended edition including git (https://github.com/klakegg/docker-hugo/blob/master/README.md#hugo-extended-edition)
-    image: klakegg/hugo:0.89.4-ext-asciidoctor
+    image: klakegg/hugo:0.95.0-ext-asciidoctor
     volumes:
       - .:/src
     ports:
       - 1313:1313
-    command: "serve --cleanDestinationDir --disableFastRender --path-warnings --print-mem --verbose --verboseLog --noHTTPCache"
+    command: "serve --cleanDestinationDir --disableFastRender --printPathWarnings --printMemoryUsage --verbose --verboseLog --noHTTPCache"
