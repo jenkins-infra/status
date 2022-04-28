@@ -11,6 +11,7 @@ section: issue
 ---
 
 [Initial message]
+<!-- markdown-link-check-disable-next-line -->
 We were alerted by some users that the Web UI of the JFrog's Artifactory service at <https://repo.jenkins-ci.org/ui> is unavailable: it answers HTTP/503 errors with an error page.
 
 This outage does NOT affect the ability to download or upload artefacts in the service.
