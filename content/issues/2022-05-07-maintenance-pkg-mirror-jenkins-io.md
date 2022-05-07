@@ -1,8 +1,8 @@
 ---
 title: Maintenance on pkg.jenkins.io and mirrors.jenkins.io
 date: 2022-05-07T08:30:00-00:00
-resolved: false
-#resolvedWhen: 2021-04-19T21:12:00-00:00
+resolved: true
+resolvedWhen: 2022-05-07T09:13:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: down
 affected:
