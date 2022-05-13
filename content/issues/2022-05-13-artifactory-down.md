@@ -1,8 +1,8 @@
 ---
 title: JFrog's Artifactory unavailable (repo.jenkins-ci.org)
-date: 2022-05-05T23:00:00-00:00
-resolvedWhen: 2022-05-06T20:12:00-00:00
-resolved: false
+date: 2022-05-13T07:00:00-00:00
+resolvedWhen: 2022-05-13T11:00:00-00:00
+resolved: true
 # Possible severity levels: down, disrupted, notice
 severity: down
 affected:
