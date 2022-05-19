@@ -10,4 +10,9 @@ affected:
 section: issue
 ---
 
+[edit]
+Fix applied, but it should take up to 1 hour depending on the DNS cache of your internet providers.
+More details on <https://github.com/jenkins-infra/helpdesk/issues/2888#issuecomment-1131453254>.
+
+[Initial message]
 The website updates.jenkins.io is responding either HTTP/404 pages or "Invalid certificate" (when accessed through HTTPS).
