@@ -12,6 +12,6 @@ section: issue
 ---
 
 [Open Issue]
-The SSL certificate on [pkg.jenkins.io](https://pkg.jenkins.io) and [updates.jenkins-ci.org](https://updates.jenkins-ci.org) have expired.
+The SSL certificate on pkg.jenkins.io and updates.jenkins-ci.org have expired.
 The SSL certificate on [updates.jenkins.io](https://updates.jenkins.io) has **not expired**.
 
