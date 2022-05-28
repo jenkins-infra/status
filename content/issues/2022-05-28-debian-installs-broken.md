@@ -1,5 +1,5 @@
 ---
-title: pkg.jenkins.io SSL certificate expired
+title: Debian package installs unavailable
 date: 2022-05-27T16:50:00-00:00
 resolved: false
 resolvedWhen: 2022-05-27T21:18:00-00:00
