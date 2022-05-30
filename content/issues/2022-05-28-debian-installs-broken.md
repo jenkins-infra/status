@@ -1,7 +1,7 @@
 ---
 title: Debian package installs unavailable
 date: 2022-05-27T16:50:00-00:00
-resolved: false
+resolved: true
 resolvedWhen: 2022-05-27T21:18:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: disrupted
