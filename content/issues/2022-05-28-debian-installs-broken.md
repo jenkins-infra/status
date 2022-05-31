@@ -10,6 +10,13 @@ affected:
 section: issue
 ---
 
+[Close Issue]
+A combination of external contributor fixes (HTTPS redirection) and configuration fix (rollback to the correct GPG key) fixed the issues.
+Closing as confirmed by 3 different users (on GitHub and IRC).
+
+[edit]
+Details and follow up on the following GitHub issue: <https://github.com/jenkins-infra/helpdesk/issues/2957>.
+
 [Open Issue]
 The Debian package installer fails to install from [pkg.jenkins.io](https://pkg.jenkins.io).
 
