@@ -11,7 +11,7 @@ section: issue
 ---
 
 [Close Issue]
-the new certificate had been issued and store within the trusted controller. Both the crawler an the update-center job run again smoothly.
+the new certificate had been issued and stored within the trusted controller. Both the crawler and the update-center jobs run smoothly again.
 
 [Open Issue]
 The service updates.jenkins.io, which provides a catalog of the jenkins plugins, is not updated since the 31th of May 2022, around noon UTC.
