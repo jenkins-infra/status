@@ -1,8 +1,8 @@
 ---
 title: Update Center certificate issue (updates.jenkins.io)
 date: 2022-06-14T12:42:00-00:00
-# resolvedWhen: 2022-05-13T11:00:00-00:00
-resolved: false
+resolvedWhen: 2022-06-16T13:20:00-00:00
+resolved: true
 # Possible severity levels: down, disrupted, notice
 severity: disrupted
 affected:
