@@ -395,7 +395,7 @@ params:
     We continuously monitor the status of our services and if there is any interruptions,a note will be posted here.
     Feel free to contribute to this page [here](https://github.com/jenkins-infra/status)
 
-    For further questions, you can to contact us on our mailing list [here](https://groups.google.com/u/1/g/jenkins-infra)
+    For further questions, you can open an infrastructure related issue [in our help desk](https://github.com/jenkins-infra/helpdesk/issues) or contact us on our mailing list [here](https://groups.google.com/u/1/g/jenkins-infra).
 
   # Tabs on homepage
   # Uncomment to enable.
