@@ -2,7 +2,7 @@
 title: AKS publick8s version update
 date: 2022-06-30T07:00:00-00:00
 resolved: true
-#resolvedWhen: 2022-06-30T11:30:00-00:00
+resolvedWhen: 2022-06-30T11:30:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: notice
 affected:
