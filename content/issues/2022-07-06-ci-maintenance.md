@@ -1,8 +1,8 @@
 ---
 title: Maintenance Window on ci.jenkins.io
 date: 2022-07-06T10:00:00-00:00
-resolved: false
-#resolvedWhen: 2022-06-22T13:45:00-00:00
+resolved: true
+resolvedWhen: 2022-07-06T18:00:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: disrupted
 affected:
