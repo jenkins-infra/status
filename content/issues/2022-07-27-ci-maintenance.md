@@ -10,7 +10,7 @@ affected:
 section: issue
 ---
 
-<!-- [Final message] The maintenance is finished, ci.jenkins.io is back online. -->
+<!-- [Final message] The maintenance is finished, ci.jenkins.io is back online.
 
-[Initial message]
+[Initial message] -->
 A maintenance on ci.jenkins.io has been started.
