@@ -1,8 +1,8 @@
 ---
 title: 'Kubernetes Maintenance: Nginx Ingress + Falco upgrades'
 date: 2022-08-09T09:00:00-00:00
-resolved: false
-resolvedWhen: 2022-08-09T11:00:00-00:00
+resolved: true
+resolvedWhen: 2022-08-09T10:30:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: disrupted
 affected:
