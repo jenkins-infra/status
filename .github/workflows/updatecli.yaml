@@ -15,6 +15,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+      - uses: tibdex/github-app-token@v1.5
+        id: generate_token
+        if: github.ref == 'refs/heads/main'
+        with:
+          app_id: ${{ secrets.JENKINS_ADMIN_APP_ID }}
+          private_key: ${{ secrets.JENKINS_ADMIN_APP_PRIVKEY }}
       - name: Diff
         continue-on-error: true
         uses: updatecli/updatecli-action@v1
@@ -23,13 +29,7 @@ jobs:
           flags: "--config ./updatecli/updatecli.d --values ./updatecli/values.github-action.yaml"
         env:
           # Github "generated" token is used because the repository secrets are not available in PRs.
-          UPDATECLI_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - uses: tibdex/github-app-token@v1.5
-        id: generate_token
-        if: github.ref == 'refs/heads/main'
-        with:
-          app_id: ${{ secrets.JENKINS_ADMIN_APP_ID }}
-          private_key: ${{ secrets.JENKINS_ADMIN_APP_PRIVKEY }}
+          UPDATECLI_GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
       - name: Apply
         uses: updatecli/updatecli-action@v1
         if: github.ref == 'refs/heads/main'
