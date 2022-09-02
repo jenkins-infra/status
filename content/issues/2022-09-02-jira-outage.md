@@ -1,8 +1,8 @@
 ---
 title: Jira (issues.jenkins.io) outage
-date: 2022-09-02T19:21:00-00:00
-resolved: false
-resolvedWhen: 2022-09-02T21:21:00-00:00
+date: 2022-09-02T19:33:00-00:00
+resolved: true
+resolvedWhen: 2022-09-02T21:33:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: down
 affected:
