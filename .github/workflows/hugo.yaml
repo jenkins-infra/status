@@ -8,7 +8,6 @@ jobs:
         with:
           # this is needed to checkout theme which normally come from separate git repository
           submodules: true
-      - run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
       - name: hugo
         uses: klakegg/actions-hugo@1.0.0
         with:
