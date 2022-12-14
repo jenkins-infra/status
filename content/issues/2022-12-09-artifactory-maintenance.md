@@ -18,7 +18,7 @@ Expect a complete downtime of about 6 hours due to the nature of this maintenanc
 Only Jenkins contributors will be impacted, as no releases or builds on ci.jenkins.io or on developer machines will succeed during the downtime.
 Jenkins users won’t be impacted.
 
-Please note that http:s://ci.jenkins.io[ci.jenkins.io] will be in "maintenance mode" during the operation:
+Please note that [ci.jenkins.io](https://ci.jenkins.io) will be in "maintenance mode" during the operation:
 new incoming builds will stay in the build queue while the maintenance mode is enabled, to ensure that no build is lost.
 
 More information in <https://github.com/jenkins-infra/helpdesk/issues/3288>.
