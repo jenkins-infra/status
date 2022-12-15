@@ -87,7 +87,7 @@ You need the following tools to run the website locally (with live-reload):
 * Docker Engine in version 19.03+
 * The `docker-compose` command line in version 1.26.x+
 
-Start by cloning locally the repository and retrieve the Hugo theme with the git sub module:
+**Start by cloning locally the repository** and retrieve the Hugo theme with the git sub module:
 
 ```
 git clone https://github.com/jenkins-infra/status
