@@ -15,7 +15,7 @@ section: issue
 [Final message]
 The maintenance has been completed with success by JFrog.
 
-[repo.jenkins-ci.org](https://repo.jenkins-ci.org) is back online and we resumed [ci.jenkins.io](https://ci.jenkins.io) builds.
+[repo.jenkins-ci.org](https://repo.jenkins-ci.org) is back online, we resumed [ci.jenkins.io](https://ci.jenkins.io) and [trusted.ci.jenkins.io](https://trusted.ci.jenkins.io) builds.
 
 [Initial message]
 December 18, 2022 at 09:00am UTC: our sponsor JFrog will proceed to perform maintenance of our "jenkinsci" Artifactory instance.
