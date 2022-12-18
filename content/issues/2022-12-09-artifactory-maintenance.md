@@ -4,10 +4,11 @@ date: 2022-12-18T09:00:00-00:00
 resolvedWhen: 2022-12-18T10:30:00-00:00
 resolved: false
 # Possible severity levels: down, disrupted, notice
-severity: notice
+severity: down
 affected:
   - repo.jenkins-ci.org
   - ci.jenkins.io
+  - trusted.ci.jenkins.io
 section: issue
 ---
 
