@@ -1,7 +1,7 @@
 ---
 title: Maintenance with downtime of JFrog Artifactory (repo.jenkins-ci.org)
 date: 2022-12-18T09:00:00-00:00
-resolvedWhen: 2022-12-18T14:15:00-00:00
+resolvedWhen: 2022-12-18T14:30:00-00:00
 resolved: true
 # Possible severity levels: down, disrupted, notice
 severity: down
