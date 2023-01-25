@@ -1,8 +1,8 @@
 ---
 title: PostgreSQL maintenance
-date: 2023-01-20T10:30:00-00:00
-resolved: false
-# resolvedWhen: 2023-01-20T10:30:00-00:00
+date: 2023-01-20T11:30:00-00:00
+resolved: true
+resolvedWhen: 2023-01-20T17:30:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: notice
 affected:
