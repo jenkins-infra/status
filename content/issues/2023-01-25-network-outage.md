@@ -12,4 +12,4 @@ section: issue
 Not all users where impacted, which led to an incident on fastly side : https://www.fastlystatus.com/incident/375724
 
 ---
-The [jenkins.io](https://www.jenkins.io/doc/developer/security/scan/) send a 503 error for some internet providers.
+The [jenkins.io](https://www.jenkins.io/doc/developer/security/scan/) website responds with HTTP/503 errors for some users and some pages (but not all).
