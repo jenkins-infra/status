@@ -9,7 +9,10 @@ affected:
   - jenkins.io
 section: issue
 ---
-Not all users where impacted, which led to an incident on fastly side : https://www.fastlystatus.com/incident/375724
+
+We manually tested and purged the fastly cache and saw the errors (on team members affected networks) disappearing.
+
+As not all users where impacted, we think it's an incident on fastly side : https://www.fastlystatus.com/incident/375724
 
 ----
 
