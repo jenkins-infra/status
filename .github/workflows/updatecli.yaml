@@ -23,7 +23,7 @@ jobs:
           private_key: ${{ secrets.JENKINS_ADMIN_APP_PRIVKEY }}
       - name: Diff
         continue-on-error: true
-        uses: updatecli/updatecli-action@v1
+        uses: updatecli/updatecli-action@v2
         with:
           command: diff
           flags: "--config ./updatecli/updatecli.d --values ./updatecli/values.github-action.yaml"
@@ -31,7 +31,7 @@ jobs:
           # Github "generated" token is used because the repository secrets are not available in PRs.
           UPDATECLI_GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
       - name: Apply
-        uses: updatecli/updatecli-action@v1
+        uses: updatecli/updatecli-action@v2
         if: github.ref == 'refs/heads/main'
         with:
           command: apply
