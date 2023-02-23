@@ -1,8 +1,8 @@
 ---
 title: Update AKS clusters Kubernetes version to 1.24
 date: 2023-02-23T10:30:00-00:00
-resolved: false
-# resolvedWhen: 2023-02-22T17:30:00-00:00
+resolved: true
+resolvedWhen: 2023-02-22T15:00:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: notice
 affected:
