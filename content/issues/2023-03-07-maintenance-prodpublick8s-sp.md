@@ -13,6 +13,7 @@ affected:
   - jenkins-wiki-exporter.jenkins.io
   - ldap.jenkins.io
   - plugins.jenkins.io
+  - repo.jenkins-ci.org
   - reports.jenkins.io
   - stories.jenkins.io
   - www.jenkins.io
@@ -27,7 +28,7 @@ This operation will restart all the machines of the cluster.
 
 The following services will be restarted (e.g. unavailable during the restart phase):
 
-- ldap.jenkins.io (authentication on ci.jenkins.io and issues.jenkins.io is affected)
+- ldap.jenkins.io (⚠️ authentication on ci.jenkins.io, issues.jenkins.io and repo.jenkins-ci.org is affected)
 - reports.jenkins.io
 
 The following services will be migrated without downtime (but slower response time during the operation):
