@@ -30,7 +30,7 @@ The following services will be restarted (e.g. unavailable during the restart ph
 - ldap.jenkins.io (authentication on ci.jenkins.io and issues.jenkins.io is affected)
 - reports.jenkins.io
 
-The following services will be migrated without downtime (e.g. slower response time during the operation):
+The following services will be migrated without downtime (but slower response time during the operation):
 
 - accounts.jenkins.io
 - get.jenkins.io
