@@ -1,8 +1,8 @@
 ---
 title: Update Azure Service Principal credential for the AKS cluster prodpublick8s
 date: 2023-03-07T13:00:00-00:00
-resolved: false
-# resolvedWhen: 2023-03-07T14:00:00-00:00
+resolved: true
+resolvedWhen: 2023-03-07T13:30:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: disrupted
 affected:
@@ -13,13 +13,19 @@ affected:
   - jenkins-wiki-exporter.jenkins.io
   - ldap.jenkins.io
   - plugins.jenkins.io
+  - release.ci.jenkins.io
   - repo.jenkins-ci.org
   - reports.jenkins.io
   - stories.jenkins.io
+  - weekly.ci.jenkins.io
   - www.jenkins.io
 section: issue
 ---
 
+[Closing]
+The operation went well and took 30 minutes, including 5 minute of restart for ldap.jenkins.io.
+
+[Opening]
 We'll perform an operation on the AKS cluster `prodpublick8s` the 07 of March 2023 at 13:00 UTC.
 
 The goal of this operation is to rotate the (soon-to-be-expired) Azure Service Principal credential for this cluster.
