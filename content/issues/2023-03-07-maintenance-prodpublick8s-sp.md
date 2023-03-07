@@ -27,7 +27,7 @@ This operation will restart all the machines of the cluster.
 
 The following services will be restarted (e.g. unavailable during the restart phase):
 
-- ldap.jenkins.io
+- ldap.jenkins.io (authentication on ci.jenkins.io and issues.jenkins.io is affected)
 - reports.jenkins.io
 
 The following services will be migrated without downtime (e.g. slower response time during the operation):
