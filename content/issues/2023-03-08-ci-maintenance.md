@@ -10,8 +10,8 @@ affected:
 section: issue
 ---
 
-<!-- [Final message]
-The maintenance is ended. -->
+[Final message]
+The maintenance is ended.
 
-<!-- [Initial message] -->
+[Initial message]
 Maintenance on ci.jenkins.io, down for security advisory (ref. <https://groups.google.com/g/jenkinsci-advisories/c/RmkqB1wAY14>).
