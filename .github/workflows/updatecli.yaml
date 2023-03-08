@@ -27,7 +27,7 @@ jobs:
         run: updatecli diff --config ./updatecli/updatecli.d --values ./updatecli/values.github-action.yaml
         env:
           # Github "generated" token is used because the repository secrets are not available in PRs.
-          UPDATECLI_GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
+          UPDATECLI_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Apply
         if: github.ref == 'refs/heads/main'
