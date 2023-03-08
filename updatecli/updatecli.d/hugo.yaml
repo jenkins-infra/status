@@ -29,7 +29,7 @@ conditions:
   checkIfDockerImageIsPublished:
     name: "Test if the docker image 'klakegg/hugo' is available on the DockerHub registry"
     transformers:
-      - addSuffix: "-ext-asciidoctor"
+      - addsuffix: "-ext-asciidoctor"
     sourceid: getLatestDockerHugoVersion
     kind: dockerimage
     spec:
@@ -40,8 +40,8 @@ conditions:
 targets:
   updateDockerComposeFile:
     transformers:
-      - addPrefix: "klakegg/hugo:"
-      - addSuffix: "-ext-asciidoctor"
+      - addprefix: "klakegg/hugo:"
+      - addsuffix: "-ext-asciidoctor"
     name: "Update Hugo version in docker image name in docker-compose.yaml"
     kind: yaml
     spec:
@@ -64,14 +64,10 @@ targets:
       key: jobs.build.steps[1].with.version
     scmid: default
 
-pullrequests:
+actions:
   chart:
-    kind: github
+    kind: github/pullrequest
     scmid: default
-    targets:
-      - updateDockerComposeFile
-      - updateNetlifyConfig
-      - updateGitHubWorkflow
     spec:
       labels:
         - dependencies
