@@ -6,7 +6,7 @@ resolved: false
 # Possible severity levels: down, disrupted, notice
 severity: down
 affected:
-  - jenkins-admin IRC bot (#jenkins-hosting channel on IRC)
+  - jenkins-admin IRC bot (jenkins-hosting channel on IRC)
   - github-comment-ops on GitHub
   - rss2twitter bot (Twitter)
 section: issue
