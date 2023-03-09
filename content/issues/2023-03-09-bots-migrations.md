@@ -2,7 +2,7 @@
 title: Bots migration
 date: 2023-03-09T09:00:00-00:00
 resolved: true
-resolvedWhen: 2023-03-10T55:00:00-00:00
+resolvedWhen: 2023-03-09T10:55:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: down
 affected:
