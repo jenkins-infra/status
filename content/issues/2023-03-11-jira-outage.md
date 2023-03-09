@@ -9,4 +9,4 @@ affected:
   - issues.jenkins.io
 section: issue
 ---
-The JIRA instance at issues.jenkins.io, managed by the Linux Foundation team, will be down for up to 30 minutes so that it can be upgraded.
+The JIRA instance at issues.jenkins.io, managed by the Linux Foundation team, will be down for up to 30 minutes beginning at midnight (UTC) Saturday March 11, 2023 so that it can be upgraded.
