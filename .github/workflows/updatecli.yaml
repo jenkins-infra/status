@@ -26,12 +26,12 @@ jobs:
         continue-on-error: true
         run: updatecli diff --config ./updatecli/updatecli.d --values ./updatecli/values.github-action.yaml
         env:
-          # Github "generated" token is used because the repository secrets are not available in PRs.
+          # Use the GITHUB_TOKEN for the "Updatecli Diff" step so it's executed in every PR with the PR author's identity (relying on tidbex is only possible on the upstream branches)
           UPDATECLI_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Apply
         if: github.ref == 'refs/heads/main'
         run: updatecli apply --config ./updatecli/updatecli.d --values ./updatecli/values.github-action.yaml
         env:
-          # Secret repository's token is used to create PRs on behalf of the jenkins-infra-bot
+          # Github "generated" token is used because the repository secrets are not available in PRs.
           UPDATECLI_GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
