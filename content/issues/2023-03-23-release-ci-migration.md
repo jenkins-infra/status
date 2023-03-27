@@ -1,8 +1,8 @@
 ---
 title: release.ci.jenkins.io migration
 date: 2023-03-23T15:00:00-00:00
-resolved: false
-# resolvedWhen: 2023-03-21T14:20:00-00:00
+resolved: true
+resolvedWhen: 2023-03-27T10:20:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: down
 affected:
@@ -10,10 +10,10 @@ affected:
 section: issue
 ---
 
-<!-- [Final message]
+[Final message]
 The migration is ended.
 
-[Initial message] -->
+[Initial message]
 
 We'll migrate release.ci.jenkins.io to a new private cluster for a better segregation of release jobs, and easier maintenance as this new cluster and related resources are managed as code.
 
