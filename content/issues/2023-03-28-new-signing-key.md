@@ -5,8 +5,8 @@ resolved: false
 #resolvedWhen: 2023-04-21T14:20:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: notice
-# affected:
-#   - ci.jenkins.io
+affected:
+  - Jenkins instances
 section: issue
 ---
 
