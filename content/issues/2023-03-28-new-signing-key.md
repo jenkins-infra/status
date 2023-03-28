@@ -6,7 +6,7 @@ resolved: false
 # Possible severity levels: down, disrupted, notice
 severity: notice
 affected:
-  - Jenkins instances
+  - Jenkins instances on Linux
 section: issue
 ---
 
