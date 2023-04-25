@@ -11,9 +11,12 @@ section: issue
 ---
 
 
+[Updated]
+- Root cause found: the problem was caused by a mix of technical and human errors which led to a lockout of the AWS EKS cluster used by ci.jenkins.io.
+- The cluster requires a re-creation, which can take 1 to 2 hours.
+- A remediation was applied: DigitalOcean is now used for container workload until the operation is finished: https://github.com/jenkins-infra/jenkins-infra/commit/2bfbb53123b43317d91a280ce8b8c9ae4c8b35a2
+
 [Initial message]
 ci.jenkins.io is not able to start container agents.
 
 The builds requiring a container agents are queued, while the other are executed as usual.
-
-Investigation in progress...
