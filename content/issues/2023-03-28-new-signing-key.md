@@ -1,8 +1,8 @@
 ---
 title: "Jenkins 2.397 and 2.387.2: New Linux Repository Signing Keys"
 date: 2023-03-28T08:00:00-00:00
-resolved: false
-#resolvedWhen: 2023-04-21T14:20:00-00:00
+resolved: true
+resolvedWhen: 2023-04-05T14:20:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: notice
 # affected:
