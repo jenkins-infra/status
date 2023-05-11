@@ -1,8 +1,8 @@
 ---
 title: Outage for container agents on ci.jenkins.io
 date: 2023-04-25T13:00:00-00:00
-resolved: false
-# resolvedWhen: 2022-11-15T17:20:00-00:00
+resolved: true
+resolvedWhen: 2023-04-26T14:02:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: disrupted
 affected:
@@ -10,6 +10,9 @@ affected:
 section: issue
 ---
 
+[Final Message]
+A new cluster was created and used to replace the former one, with additional measures to avoid future lock out.
+Follow up in https://github.com/jenkins-infra/helpdesk/issues/3542.
 
 [Updated]
 - Root cause found: the problem was caused by a mix of technical and human errors which led to a lockout of the AWS EKS cluster used by ci.jenkins.io.
