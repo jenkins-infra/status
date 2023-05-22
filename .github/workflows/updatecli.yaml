@@ -20,7 +20,7 @@ jobs:
           app_id: ${{ secrets.JENKINS_ADMIN_APP_ID }}
           private_key: ${{ secrets.JENKINS_ADMIN_APP_PRIVKEY }}
       - name: Setup updatecli
-        uses: updatecli/updatecli-action@8e73d91ceece20dd2dc9afc0d03cc3418c8cb78b # v2
+        uses: updatecli/updatecli-action@015ff114202ca04afb40165889be5216799b8605 # v2
 
       - name: Diff
         continue-on-error: true
