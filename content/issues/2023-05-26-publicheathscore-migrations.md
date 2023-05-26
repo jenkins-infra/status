@@ -12,6 +12,6 @@ section: issue
 ---
 
 [Initial message]
-A migration of the application Plugins Health Score from prodpublick8s cluster to publick8s cluster is planned today on Friday 26th of May 2023 at 13h30 UTC, the corresponding services will be down for less than one hour:
+A migration of the application Plugins Health Score from prodpublick8s cluster to publick8s cluster is planned today on Friday 26th of May 2023 at 13h30 UTC, the corresponding services may be down for less than one hour:
   - plugins.jenkins.io
   - plugin-health.jenkins.io
