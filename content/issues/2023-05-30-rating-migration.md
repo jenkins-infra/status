@@ -1,7 +1,7 @@
 ---
 title: rating.jenkins.io migration
 date: 2023-05-30T16:45:00-00:00
-resolved: false
+resolved: true
 resolvedWhen: 2023-05-30T17:15:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: disrupted
@@ -10,6 +10,9 @@ affected:
   - rating.jenkins.io
 section: issue
 ---
+
+[Final message]
+Migration complete with a 3 minutes downtime.
 
 [Initial message]
 A migration of the application "Rating" (`rating.jenkins.io` - used by <https://www.jenkins.io/changelog-stable/> and <https://www.jenkins.io/changelog/> pages) from `prodpublick8s` cluster to `publick8s` cluster is planned today on Tuesday 30th of May 2023 at 16h45 UTC.
