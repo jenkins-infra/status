@@ -1,5 +1,5 @@
 ---
-title: `rating.jenkins.io` migration
+title: rating.jenkins.io migration
 date: 2023-05-30T16:45:00-00:00
 resolved: false
 resolvedWhen: 2023-05-30T17:15:00-00:00
