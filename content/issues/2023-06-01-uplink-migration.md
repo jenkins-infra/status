@@ -1,8 +1,8 @@
 ---
 title: uplink.jenkins.io migration
-date: 2023-05-30T12:45:00-00:00
+date: 2023-06-01T13:00:00-00:00
 resolved: false
-resolvedWhen: 2023-05-30T17:15:00-00:00
+#resolvedWhen: 2023-06-01T13:30:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: disrupted
 affected:
