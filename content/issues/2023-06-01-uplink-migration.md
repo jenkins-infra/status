@@ -10,7 +10,11 @@ affected:
 section: issue
 ---
 
-[Initial message]
+<!--[Final message]
+
+Migration completed.
+
+[Initial message] -->
 A migration of the "Uplink" application (`uplink.jenkins.io` - used for telemetry) from `prodpublick8s` cluster to `publick8s` cluster is planned today on Thursday 1st of June 2023 at 12h45 UTC.
 The corresponding service may be down for less than one hour.
 
