@@ -1,4 +1,4 @@
-title: "Bump Hugo version"
+name: Bump Hugo version
 
 scms:
   default:
@@ -68,6 +68,7 @@ actions:
   chart:
     kind: github/pullrequest
     scmid: default
+    title: Bump Hugo version to {{ source `getLatestDockerHugoVersion` }}
     spec:
       labels:
         - dependencies
