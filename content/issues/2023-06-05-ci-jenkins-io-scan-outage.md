@@ -1,5 +1,5 @@
 ---
-title: reports.jenkins.io migration
+title: ci.jenkins.io scans outage
 date: 2023-06-05T14:00:00-00:00
 resolved: false
 # resolvedWhen: 2023-06-02T11:05:00-00:00
