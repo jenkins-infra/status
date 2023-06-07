@@ -16,4 +16,4 @@ The mirror repository `jgit` in the JFrog Artifactory service <repo.jenkins-ci.o
 
 This [planned brownout](https://en.wikipedia.org/wiki/Brownout_(software_engineering)) is a step of <https://github.com/jenkins-infra/helpdesk/issues/3599> to study the behavior of our builds.
 
-There should be no impact, as the artifacts should be consumed through the `public` virtual repository but we cannot be 100% sure, hence the operation.
+There should be no impact, as the artifacts should be consumed through the `public` virtual repository but we cannot be 100% sure, hence this operation.
