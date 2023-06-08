@@ -17,7 +17,7 @@ Migration completed.
 [Initial message] -->
 A migration of the LDAP service (`ldap.jenkins.io` - used for Jenkins user authentication) from `prodpublick8s` cluster to `publick8s` cluster is planned today on Thursday 8th of June 2023 at 12h00 UTC.
 
-In order to avoid any user base modification while migrating this service, accounts.jenkins.io access will be disabled for less than an hour.
+In order to avoid any user base modification while migrating this service, [accounts.jenkins.io](https://accounts.jenkins.io) access will be disabled for less than an hour.
 
 Although no downtime is expected, the following services might be impacted:
 - JFrog Artifactory (repo.jenkins-ci.org)
