@@ -1,8 +1,8 @@
 ---
 title: ldap.jenkins.io migration
 date: 2023-06-08T12:00:00-00:00
-resolved: false
-resolvedWhen: 2023-06-08T13:00:00-00:00
+resolved: true
+resolvedWhen: 2023-06-08T13:05:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: disrupted
 affected:
@@ -11,10 +11,10 @@ affected:
 section: issue
 ---
 
-<!-- [Final message]
-Migration completed.
+[Final message]
+Although the intended redirections from accounts.jenkins.io & accounts.jenkins-ci.org to status.jenkins.io didn't worked as expected, the LDAP migration has been successfully completed, no service interruption.
 
-[Initial message] -->
+[Initial message]
 A migration of the LDAP service (`ldap.jenkins.io` - used for Jenkins user authentication) from `prodpublick8s` cluster to `publick8s` cluster is planned today on Thursday 8th of June 2023 at 12h00 UTC.
 
 In order to avoid any user base modification while migrating this service, [accounts.jenkins.io](https://accounts.jenkins.io) access will be disabled for less than an hour.
