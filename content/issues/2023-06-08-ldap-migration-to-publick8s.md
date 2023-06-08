@@ -12,7 +12,7 @@ section: issue
 ---
 
 [Final message]
-Although the intended redirections from accounts.jenkins.io & accounts.jenkins-ci.org to status.jenkins.io didn't worked as expected, the LDAP migration has been successfully completed, no service interruption.
+Although the intended redirections from accounts.jenkins.io & accounts.jenkins-ci.org to status.jenkins.io didn't work as expected, the LDAP migration has been successfully completed, no service interruption.
 
 [Initial message]
 A migration of the LDAP service (`ldap.jenkins.io` - used for Jenkins user authentication) from `prodpublick8s` cluster to `publick8s` cluster is planned today on Thursday 8th of June 2023 at 12h00 UTC.
