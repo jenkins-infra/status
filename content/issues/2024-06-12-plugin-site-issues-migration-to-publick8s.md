@@ -1,5 +1,5 @@
 ---
-title: mirrorbits migration
+title: plugin-site-issues migration
 date: 2023-06-12T13:00:00-00:00
 resolved: false
 resolvedWhen: 2023-06-12T12:00:00-00:00
