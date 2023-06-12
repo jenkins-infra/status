@@ -6,7 +6,7 @@ resolvedWhen: 2023-06-13T14:00:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: disrupted
 affected:
-  - plugins.jenkins.io
+  - www.jenkins.io
 section: issue
 ---
 
@@ -14,7 +14,7 @@ section: issue
 Migration successfully completed, no service interruption.
 
 [Initial message] -->
-A migration of [Jenkins website](https://www.jenkins.io) from `prodpublick8s` cluster to `publick8s` cluster is planned on Tuesday 13th of June 2023 at 08h00 UTC.
+A migration of [Jenkins website](https://www.jenkins.io) from `prodpublick8s` cluster to `publick8s` cluster is planned on Tuesday 13th of June 2023 at 12h00 UTC.
 
 In order to avoid any concurrent updates, jenkins-infra/jenkins.io builds will be disabled for less than an hour.
 
