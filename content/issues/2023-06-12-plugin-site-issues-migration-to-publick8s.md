@@ -1,7 +1,7 @@
 ---
 title: plugin-site-issues migration
 date: 2023-06-12T13:30:00-00:00
-resolved: false
+resolved: true
 resolvedWhen: 2023-06-12T14:00:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: disrupted
