@@ -1,7 +1,7 @@
 ---
 title: Maintenance on ci.jenkins.io
 date: 2023-06-14T12:00:00-00:00
-resolved: false
+resolved: true
 resolvedWhen: 2023-06-14T13:00:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: down
@@ -10,11 +10,8 @@ affected:
 section: issue
 ---
 
-<!--
 [Final message]
-The maintenance is ended.
-
--->
+The maintenance is ended. Advisory published: <https://www.jenkins.io/security/advisory/2023-06-14/>.
 
 [Initial message]
 Maintenance on ci.jenkins.io, down for security advisory. (ref. <https://groups.google.com/g/jenkinsci-advisories/c/CD7La5U-dIQ>).
