@@ -88,8 +88,7 @@ This is essentially a page with a date and title.
 You need the following tools to run the website locally (with live-reload):
 
 * git command line, in version 2.x
-* Docker Engine in version 19.03+
-* The `docker-compose` command line in version 1.26.x+
+* Docker Engine in version 24.0+, including the "docker compose" command
 
 Start by cloning locally the repository and retrieve the Hugo theme with the git sub module:
 
@@ -105,7 +104,7 @@ You can now execute the website locally:
 
 [source,bash]
 --
-docker-compose up --build --force-recreate
+docker compose up --build --force-recreate
 --
 
 You can then access it at http://localhost:1313/.
