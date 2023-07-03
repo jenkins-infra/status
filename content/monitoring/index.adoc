@@ -6,7 +6,7 @@ title: "Monitoring"
 
 The project relies on Datadog for monitoring Jenkins infrastructure.
 Here is a list of popular dashboard used.
-Feel free to request additional ones.
+Feel free to request additional ones by opening an issue in https://github.com/jenkins-infra/helpdesk
 
 [%header,cols=3*]
 |===
