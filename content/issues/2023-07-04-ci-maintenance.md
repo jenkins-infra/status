@@ -10,6 +10,13 @@ affected:
 section: issue
 ---
 
+[Update 1]
+ci.jenkins.io remains down until 5th of July due to I/O issues on the old `JENKINS_HOME`.
+Ref. https://github.com/jenkins-infra/helpdesk/issues/3535#issuecomment-1620171502.
+
+[Update 1]
+Kubernetes 1.25 upgrade on AWS went well and was finished at 15:00 UTC.
+
 [Initial message]
 Maintenance on ci.jenkins.io is planned the Tuesday 4th of July 2023:
 
