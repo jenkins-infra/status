@@ -1,8 +1,8 @@
 ---
 title: Maintenance on ci.jenkins.io
-date: 2023-07-94T13:00:00-00:00
-resolved: false
-resolvedWhen: 2023-07-94T17:00:00-00:00
+date: 2023-07-04T13:00:00-00:00
+resolved: true
+resolvedWhen: 2023-07-05T09:00:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: down
 affected:
@@ -10,9 +10,18 @@ affected:
 section: issue
 ---
 
-[Update 1]
+[Final Message]
+Everything is back to normal on ci.jenkins.io. Follows up in <https://github.com/jenkins-infra/helpdesk/issues/3535>.
+
+[Update 3]
+At 21h30 UTC, all builds (except BOM) were able to run, with some runtime errors in some cases due to missing plugins.
+
+[Update 3]
+At 20h45 UTC, the migration was finished and ci.jenkins.io was available again.
+
+[Update 2]
 ci.jenkins.io remains down until 5th of July due to I/O issues on the old `JENKINS_HOME`.
-Ref. https://github.com/jenkins-infra/helpdesk/issues/3535#issuecomment-1620171502.
+Ref. <https://github.com/jenkins-infra/helpdesk/issues/3535#issuecomment-1620171502.>
 
 [Update 1]
 Kubernetes 1.25 upgrade on AWS went well and was finished at 15:00 UTC.
