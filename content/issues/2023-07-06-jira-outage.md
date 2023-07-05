@@ -4,7 +4,7 @@ date: 2023-07-06T21:00:00-00:00
 resolved: false
 resolvedWhen: 2023-07-06T23:00:00-00:00
 # Possible severity levels: down, disrupted, notice
-severity: notice
+severity: down
 affected:
   - issues.jenkins.io
 section: issue
