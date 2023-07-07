@@ -23,7 +23,7 @@ affected:
 section: issue
 ---
 
-We're doing an AKS clusters upgrade from 1.24 to 1.25 the Friday 07th of July 2023, starting at 10:30 UTC.
+We're doing an AKS clusters upgrade from 1.24 to 1.25 the Friday 07th of July 2023, starting at 08:30 UTC.
 
 More details in <https://github.com/jenkins-infra/helpdesk/issues/3582>.
 
