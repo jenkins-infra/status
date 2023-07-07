@@ -12,5 +12,7 @@ section: issue
 [Final message]
 [This work is completed.](https://groups.google.com/g/jenkinsci-dev/c/Qx4QtAFIdoA/m/dFDi_1ECBwAJ)
 
+More details are available from the Linux Foundation in [Jira upgrade for Jenkins](https://status.linuxfoundation.org/incidents/0618mjh9356n).
+
 [Initial message]
 The JIRA instance at issues.jenkins.io, managed by the Linux Foundation team, will be down for up to three hours beginning at 9:00 PM (UTC) Thursday July 6, 2023 so that it can be upgraded.
