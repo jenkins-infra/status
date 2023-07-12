@@ -1,6 +1,6 @@
 ---
 title: Maintenance on ci.jenkins.io
-date: 2023-07-12T13:00:00-00:00
+date: 2023-07-12Z11:30:00-00:00
 resolved: false
 resolvedWhen: 2023-07-12T13:30:00-00:00
 # Possible severity levels: down, disrupted, notice
