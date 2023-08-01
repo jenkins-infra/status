@@ -1,8 +1,8 @@
 ---
 title: reports.jenkins.io migration
-date: 2023-08-1T13:00:00-00:00
+date: 2023-08-01T13:00:00-00:00
 resolved: true
-resolvedWhen: 2023-08-1T13:15:00-00:00
+resolvedWhen: 2023-08-01T13:15:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: disrupted
 affected:
