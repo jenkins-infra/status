@@ -290,9 +290,9 @@ params:
         Jenkins update-center
       # partial: http_response_time/updates.jenkins.io
 
-    - name: vpn.jenkins.io
+    - name: private.vpn.jenkins.io
       description: |
-        Service running our vpn service
+        Service running our private VPN
       #category: Azure
       category: "[ s -> x ]"
 
