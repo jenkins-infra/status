@@ -22,4 +22,4 @@ This operation consists in removing all mirrors of the [Maven Central](https://s
 This [planned brownout](https://en.wikipedia.org/wiki/Brownout_(software_engineering)) is a step of <https://github.com/jenkins-infra/helpdesk/issues/3599> to decrease the amount of outbound bandwidth download of our instance.
 
 There should be no functional impact, as Maven as a built-in fallback to the repository `central`.
-However, we expect the builds on ci.jenkins.io to be a bit slower as the artefacts donwloaded from central won't be cached anymore.
+However, we expect the builds on ci.jenkins.io to be a bit slower as the artifacts downloaded from central won't be cached anymore.
