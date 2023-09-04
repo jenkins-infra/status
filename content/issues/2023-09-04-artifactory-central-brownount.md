@@ -1,7 +1,7 @@
 ---
 title: Brownout of the Maven Central mirrored repositories in JFrog Artifactory (repo.jenkins-ci.org)
 date: 2023-09-04T12:00:00-00:00
-resolved: false
+resolved: true
 resolvedWhen: 2023-09-04T16:00:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: notice
@@ -12,12 +12,10 @@ affected:
 section: issue
 ---
 
-<!-->
 [Final Message]
-Brownout is finished after 1h30 (instead of initial 1 hour).
+Brownout is finished.
 
 [Initial Message]
--->
 
 Monday 04 of September 2023, we'll perform a [brownout](https://en.wikipedia.org/wiki/Brownout_(software_engineering)) operation of 4 hours on the Jenkins Artifactory service at repo.jenkins-ci.org at 10:00 UTC.
 
