@@ -1,5 +1,5 @@
 ---
-title: ldap outage
+title: weekly.ci.jenkins.io outage
 date: 2023-09-13T10:00:00-00:00
 resolved: false
 #resolvedWhen: 2023-06-06T14:50:00-00:00
