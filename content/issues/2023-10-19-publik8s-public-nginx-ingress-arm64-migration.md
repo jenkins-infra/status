@@ -1,7 +1,7 @@
 ---
 title: arm64 migration of public nginx ingress on publick8s cluster
 date: 2023-10-10T12:00:00-00:00
-resolved: false
+resolved: true
 resolvedWhen: 2023-10-10T12:15:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: disrupted
