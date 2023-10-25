@@ -2,7 +2,7 @@
 title: arm64 migration of mirrorbits
 date: 2023-10-25T15:30:00-00:00
 resolved: false
-# resolvedWhen: 2023-10-25T15:30:00-00:00
+# resolvedWhen: 2023-10-25T16:00:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: disrupted
 affected:
