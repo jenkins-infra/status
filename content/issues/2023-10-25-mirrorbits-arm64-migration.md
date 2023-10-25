@@ -19,7 +19,7 @@ The operation is now finished, no interruption of services.
 
 [Initial message] -->
 
-Wednesday October 25 2023, starting at 15:30 UTC, we'll proceed to the arm64 migration of the mirrorbits service responsible for get.jenkins.io, fallback.get.jenkins.io, mirrors.jenkins.io and mirror.jenkins-ci.org.
+Wednesday October 25 2023, starting at 16:00 UTC, we'll proceed to the arm64 migration of the mirrorbits service responsible for get.jenkins.io, fallback.get.jenkins.io, mirrors.jenkins.io and mirror.jenkins-ci.org.
 
 There might be a brief interruption of these services.
 
