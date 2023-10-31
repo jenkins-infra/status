@@ -1,8 +1,8 @@
 ---
 title: Preparation of uplink arm64 migration
 date: 2023-10-31T10:00:00-00:00
-resolved: false
-# resolvedWhen: 2023-10-25T17:00:00-00:00
+resolved: true
+resolvedWhen: 2023-10-31T10:10:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: disrupted
 affected:
@@ -10,11 +10,11 @@ affected:
 section: issue
 ---
 
-<!-- [Final message]
+[Final message]
 
-The operation is postponed as we encountered issues with some binaries not built for arm64 architecture in our images, no interruption of services.
+The operation is finished, no interruption of services.
 
-[Initial message] -->
+[Initial message]
 
 Tuesday October 31 2023, starting at 10:00 UTC, we'll proceed to the deployment of a new uplink image in order to prepare arm64 migration of https://uplink.jenkins.io.
 
