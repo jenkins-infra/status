@@ -18,7 +18,7 @@ The operation finished with success, no interruption of services.
 
 [Update]
 
-As removing the outdated content resulted in 403 errors (as the folder of the content was then empty), the change has been reverted and the previous state restored.
+As removing the outdated content resulted in many old links returning 403 errors, the change has been reverted and the previous state restored.
 
 Postponing the outdated content deletion while we're working on the next steps described in https://github.com/jenkins-infra/helpdesk/issues/3360#issuecomment-1790899357.
 
