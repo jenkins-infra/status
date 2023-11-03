@@ -1,8 +1,8 @@
 ---
 title: Ensure old cached jenkins.io pages are removed
-date: 2023-11-02T13:00:00-00:00
-resolved: true
-resolvedWhen: 2023-11-02T16:30:00-00:00
+date: 2023-11-03T13:30:00-00:00
+resolved: false
+# resolvedWhen: 2023-11-02T16:30:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: disrupted
 affected:
@@ -15,6 +15,11 @@ section: issue
 The operation finished with success, no interruption of services.
 
 -->
+[Update]
+
+Friday November 3d 2023, starting at 13:30 UTC, we'll activate again an option of jenkins.io build process to ensure old cached jenkins.io pages are removed and not indexed anymore.
+
+There should not be any interruption of service.
 
 [Update]
 
