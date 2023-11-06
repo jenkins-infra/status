@@ -14,9 +14,8 @@ section: issue
 <!--
 [Final Message]
 The operation finished successfully at 15:00 UTC.
--->
 
-[Initial Message]
+[Initial Message] -->
 An upgrade of the AWS EKS Kubernetes clusters from 1.25 to 1.26 is scheduled the Monday 06 November 2023 at 14:00 UTC.
 
 Expected impact on ci.jenkins.io:
