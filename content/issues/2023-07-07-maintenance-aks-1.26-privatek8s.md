@@ -26,5 +26,5 @@ We're doing an AKS cluster upgrade from 1.25 to 1.26 the Tuesday 07th of Novembe
 The expected impacts are:
 
 - infra.ci.jenkins.io will be down during 20 to 30 min (time for the upgrade to be performed and persistent volumes to be migrated)
-- No website preview of <www.jenkins.io> on pull requests
+- No website preview of `*.jenkins.io` on pull requests
 - release.ci.jenkins.io will be down during 20 to 30 min (time for the upgrade to be performed and persistent volumes to be migrated)
