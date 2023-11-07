@@ -1,8 +1,8 @@
 ---
 title: Update AKS clusters Kubernetes version to 1.26
 date: 2023-11-07T08:00:00-00:00
-resolved: false
-resolvedWhen: 2023-11-07T09:30:00-00:00
+resolved: true
+resolvedWhen: 2023-11-07T09:15:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: disrupted
 affected:
@@ -13,14 +13,10 @@ affected:
 section: issue
 ---
 
-<!--
 [Final Message]
-The operation finished at 09:30 UTC
+The operation finished with success at 09:15am UTC
 
 [Initial Message]
-
--->
-
 We're doing an AKS cluster upgrade from 1.25 to 1.26 the Tuesday 07th of November 2023, starting at 08:00am UTC.
 
 The expected impacts are:
