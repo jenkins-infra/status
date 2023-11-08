@@ -1,5 +1,5 @@
 ---
-title: Update AKS clusters Kubernetes version to 1.26
+title: Update privatek8s AKS cluster to Kubernetes 1.26
 date: 2023-11-07T08:00:00-00:00
 resolved: true
 resolvedWhen: 2023-11-07T09:15:00-00:00
