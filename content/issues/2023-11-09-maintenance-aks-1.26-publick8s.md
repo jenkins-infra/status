@@ -1,8 +1,8 @@
 ---
 title: Update publick8s AKS cluster to Kubernetes 1.26
 date: 2023-11-09T08:30:00-00:00
-resolved: false
-resolvedWhen: 2023-11-09T10:00:00-00:00
+resolved: true
+resolvedWhen: 2023-11-09T11:00:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: disrupted
 affected:
@@ -35,14 +35,13 @@ affected:
 section: issue
 ---
 
-<!--
 [Final Message]
-The operation finished with success at 10:15am UTC
+The operation finished successfully at 11:00am UTC.
+The monitoring showed an outage of 6 minutes on the LDAP and 2 minutes on the incremental publisher.
+
+More details on <https://github.com/jenkins-infra/helpdesk/issues/3683#issuecomment-1803566680>.
 
 [Initial Message]
-
--->
-
 The AKS cluster `publick8s` will be upgraded from Kubernetes 1.25 to 1.26 the Thursday 09th of November 2023, starting at 08:30am UTC.
 
 The expected impacts are:
@@ -70,5 +69,3 @@ Temporary disruptions (slow requests or outage of a few minutes) due to public I
 - stories.jenkins.io
 - uplink.jenkins.io
 - www.jenkins.io
-
-More details on <https://github.com/jenkins-infra/helpdesk/issues/3683>.
