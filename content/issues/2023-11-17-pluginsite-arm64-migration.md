@@ -11,8 +11,6 @@ affected:
 section: issue
 ---
 
-[Initial message]
-
 Friday November 17 2023, starting at 14:15 UTC, we'll proceed to https://plugin-site-issues.jenkins.io plugins.origin.jenkins.io and migration to arm64.
 
 There might be a brief interruption of the services.
