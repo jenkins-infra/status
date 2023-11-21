@@ -10,6 +10,6 @@ affected:
 section: issue
 ---
 
-Tuesday November 21 2023, starting at 16:00 UTC, we'll proceed to the second attemp of arm64 migration of the weekly.ci.jenkins.io service.
+Tuesday November 21 2023, starting at 18:00 UTC, we'll proceed to the second attemp of arm64 migration of the weekly.ci.jenkins.io service.
 
 Related help desk issue: https://github.com/jenkins-infra/helpdesk/issues/3619#issuecomment-1816831551
