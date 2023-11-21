@@ -2,7 +2,7 @@
 title: arm64 migration of weekly.ci.jenkins.io
 date: 2023-11-21T08:30:00-00:00
 resolved: true
-resolvedWhen: 2023-11-21T09:00:00-00:00
+resolvedWhen: 2023-11-21T09:15:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: disrupted
 affected:
