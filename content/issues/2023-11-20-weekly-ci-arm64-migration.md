@@ -11,7 +11,7 @@ section: issue
 ---
 
 [Final Message]
-Operation avorted due to a 'volume node affinity' problem, need to find out the problem before next try
+Operation aborted due to a 'volume node affinity' problem, need to find out the problem before next try
 
 [Initial Message]
 Tuesday November 21 2023, starting at 8:30 UTC, we'll proceed to the arm64 migration of the weekly.ci.jenkins.io service.
