@@ -1,8 +1,8 @@
 ---
 title: Operation on Jenkins Azure VM Controllers
 date: 2023-11-22T14:30:00-00:00
-resolved: false
-# resolvedWhen: 2023-11-22T14:30:00-00:00
+resolved: true
+resolvedWhen: 2023-11-22T16:30:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: notice
 affected:
