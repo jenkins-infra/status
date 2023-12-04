@@ -15,4 +15,4 @@ Wednesday December 6, 2023, we'll perform a [brownout](https://en.wikipedia.org/
 The brownout well remove all mirrors of the [jcenter artifact repository](https://jfrog.com/blog/into-the-sunset-bintray-jcenter-gocenter-and-chartcenter/) from repo.jenkins-ci.org to force Maven builds to download mirrored artifacts from the Maven central instead of our Artifactory instance.
 
 This [planned brownout](https://en.wikipedia.org/wiki/Brownout_(software_engineering)) is part of the effort to decrease outbound bandwidth used by the Jenkins Artifactory service.
-Refer to the [removal plan](https://github.com/jenkins-infra/helpdesk/issues/3842) for more details.
+Refer to the [removal plan](https://github.com/jenkins-infra/helpdesk/issues/3842) for more details and to the [announcement in the developer mailing list](https://groups.google.com/g/jenkinsci-dev/c/Jn_4U-KQUqg/m/N5i6VH7_AAAJ).
