@@ -1,8 +1,8 @@
 ---
 title: operation on systempool publick8s
 date: 2023-12-06T9:15:00-00:00
-resolved: false
-#resolvedWhen: 2023-12-05T13:20:00-00:00
+resolved: true
+resolvedWhen: 2023-12-05T11:15:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: notice
 affected:
