@@ -18,7 +18,7 @@ sources:
     kind: githubrelease
     name: Get the latest hugo version
     spec:
-      owner: "klakegg"
+      owner: "floryn90"
       repository: "docker-hugo"
       token: "{{ requiredEnv .github.token }}"
       username: "{{ .github.username }}"
@@ -27,20 +27,20 @@ sources:
 
 conditions:
   checkIfDockerImageIsPublished:
-    name: "Test if the docker image 'klakegg/hugo' is available on the DockerHub registry"
+    name: "Test if the docker image 'floryn90/hugo' is available on the DockerHub registry"
     transformers:
       - addsuffix: "-ext-asciidoctor"
     sourceid: getLatestDockerHugoVersion
     kind: dockerimage
     spec:
-      image: "klakegg/hugo"
+      image: "floryn90/hugo"
       architecture: amd64
       # Tag comes from the sourceid (+ transformation)
 
 targets:
   updateDockerComposeFile:
     transformers:
-      - addprefix: "klakegg/hugo:"
+      - addprefix: "floryn90/hugo:"
       - addsuffix: "-ext-asciidoctor"
     name: "Update Hugo version in docker image name in docker-compose.yaml"
     kind: yaml

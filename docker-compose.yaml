@@ -1,7 +1,7 @@
 services:
   status:
-    # "ext-" for the Hugo extended edition including git (https://github.com/klakegg/docker-hugo/blob/master/README.md#hugo-extended-edition)
-    image: klakegg/hugo:0.95.0-ext-asciidoctor
+    # "ext-" for the Hugo extended edition including git (https://github.com/floryn90/docker-hugo/blob/master/README.md#hugo-extended-edition)
+    image: floryn90/hugo:0.121.1-ext-asciidoctor
     volumes:
       - .:/src
     ports:
