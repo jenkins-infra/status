@@ -9,7 +9,7 @@ jobs:
           # this is needed to checkout theme which normally come from separate git repository
           submodules: true
       - name: hugo
-        uses: floryn90/actions-hugo@1.0.0
+        uses: klakegg/actions-hugo@832127b60a59f4ac9e5adda72cc8223a9b8473a0 # 1.0.0
         with:
           version: 0.121.1
           # "ext-" for the Hugo extended edition including git (https://github.com/floryn90/docker-hugo/blob/master/README.md#hugo-extended-edition)
