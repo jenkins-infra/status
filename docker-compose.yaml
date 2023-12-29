@@ -6,4 +6,4 @@ services:
       - .:/src
     ports:
       - 1313:1313
-    command: "serve --cleanDestinationDir --disableFastRender --printPathWarnings --printMemoryUsage --verbose --noHTTPCache"
+    command: "serve --cleanDestinationDir --disableFastRender --printPathWarnings --printMemoryUsage --logLevel info --noHTTPCache"
