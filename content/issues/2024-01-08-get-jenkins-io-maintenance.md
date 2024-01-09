@@ -1,8 +1,8 @@
 ---
 title: get.jenkins.io maintenance
 date: 2024-01-08T15:15:00-00:00
-resolved: false
-# resolvedWhen: 2024-01-08T16:30:00-00:00
+resolved: true
+resolvedWhen: 2024-01-09T12:00:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: disrupted
 affected:
@@ -13,6 +13,14 @@ affected:
 section: issue
 ---
 
+[Final Message]
+THe migration is finally finished at noon UTC the 09th.
+There were 2 downtimes:
+
+- 2 min the 8th around 17:30 UTC (TLS errors) due to a missing ingress configuration
+- 5 min the 9th around 11:50 UTC (HTTP/500 errors) due to a race condition in helm chart deployments
+
+[Initial Message]
 Monday January 8 2024, starting at 15:15 UTC, we'll proceed to a maintenance on the service `get.jenkins.io` hosted in the `publick8s` Azure Kubernetes cluster.
 
 The following services will be slower to respond or even might be disrupted:
