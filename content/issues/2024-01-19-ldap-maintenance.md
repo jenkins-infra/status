@@ -1,8 +1,8 @@
 ---
 title: LDAP (ldap.jenkins.io) maintenance
 date: 2024-01-19T08:45:00-00:00
-resolved: false
-resolvedWhen: 2024-01-19T09:15:00-00:00
+resolved: true
+resolvedWhen: 2024-01-19T10:15:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: disrupted
 affected:
