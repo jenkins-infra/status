@@ -1,8 +1,8 @@
 ---
 title: LDAP (ldap.jenkins.io) maintenance
-date: 2024-01-19T08:30:00-00:00
+date: 2024-01-19T08:45:00-00:00
 resolved: false
-resolvedWhen: 2024-01-19T09:00:00-00:00
+resolvedWhen: 2024-01-19T09:15:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: disrupted
 affected:
@@ -19,7 +19,7 @@ affected:
 section: issue
 ---
 
-Friday January 19 2024, starting at 08:30am UTC, we'll proceed to a maintenance on the LDAP service (`ldap.jenkins.io`) hosted in the `publick8s` Azure Kubernetes cluster.
+Friday January 19 2024, starting at 08:45am UTC, we'll proceed to a maintenance on the LDAP service (`ldap.jenkins.io`) hosted in the `publick8s` Azure Kubernetes cluster.
 
 Authentication on all of the `*.jenkins.io` and `*.jenkins-ci.orf` services will be unavailable during the operation.
 We expect a disruption between 5 and 30 min.
