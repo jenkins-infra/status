@@ -15,6 +15,6 @@ The ci.jenkins.io controller is running with updated plugins and core version.
 
 [Initial message]
 -->
-The ci.jenkins.io controller is down for maintenance as part of a security upgrade as announced in this advisory:
+The ci.jenkins.io controller is down for maintenance as part of a security upgrade announced in
 
 https://groups.google.com/g/jenkinsci-advisories/c/QZiecB2ArMs/m/sDvJWIdHBQAJ
