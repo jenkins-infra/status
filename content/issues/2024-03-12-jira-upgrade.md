@@ -11,4 +11,4 @@ section: issue
 ---
 The Jira instance at issues.jenkins.io, managed by the Linux Foundation team, will be down for up to 3 hours beginning at 23:00 (UTC) Tuesday March 12, 2024.
 The Jira instance will be upgraded to a newer release.
-Track the upgrade on the [Linux Foudnation status page](https://status.linuxfoundation.org/incidents/d6c890x0lrlp).
+Track the upgrade on the [Linux Foundation status page](https://status.linuxfoundation.org/incidents/d6c890x0lrlp).
