@@ -1,8 +1,8 @@
 ---
 title: issues.jenkins.io (Jira) upgrade
 date: 2024-03-12T23:00:00-00:00
-resolved: false
-resolvedWhen: 2024-03-13T02:00:00-00:00
+resolved: true
+resolvedWhen: 2024-03-12T23:28:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: down
 affected:
