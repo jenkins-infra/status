@@ -1,8 +1,8 @@
 ---
 title: Update azure clusters publick8s Kubernetes version to 1.27
 date: 2024-03-19T8:30:00-00:00
-resolved: false
-#resolvedWhen: 2024-03-19T9:30:00-00:00
+resolved: true
+resolvedWhen: 2024-03-19T9:35:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: down
 affected:
@@ -34,6 +34,10 @@ affected:
   - www.jenkins.io
 section: issue
 ---
+[Final Message]
+The operation finished successfully at 9:35am UTC.
+
+More details on <https://github.com/jenkins-infra/helpdesk/issues/3948#issuecomment-1991181964>.
 
 [Initial message]
 We're doing an publick8s AZ cluster upgrade from 1.26 to 1.27 today 19th of Mars 2024, starting at 8:30 UTC (9h30 paris time).
