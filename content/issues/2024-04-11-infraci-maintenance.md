@@ -9,6 +9,9 @@ affected:
   - infra.ci.jenkins.io
 section: issue
 ---
+<!-- [Final message]
+
+[Initial message] -->
 
 The infra.ci.jenkins.io controller will be down to migrate the volume used to ZRS as per
 
