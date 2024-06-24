@@ -19,4 +19,4 @@ Upgrade finished.
 
 [Initial message] -->
 We're (infra team) doing an AKS clusters upgrade from 1.27 to 1.28 the Thuesday 25th of June 2024, starting at 08:00 UTC (10h paris time).
-this will impact the ci.jenkins.io agent in cluster both normal and bom but the VM agents will still be available
+It will impact the ci.jenkins.io container agents (both `jnlp-linux-*` and `jnlp-bom` templates) but the VM agents will still be available.
