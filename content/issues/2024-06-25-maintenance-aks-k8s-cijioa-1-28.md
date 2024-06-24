@@ -1,5 +1,5 @@
 ---
-title: Update AKS clusters Kubernetes cijenkinsioagents1 version to 1.28
+title: ci.jenkins.io operation on container agents (Kubernetes 1.28)
 date: 2024-06-25T08:00:00-00:00
 resolved: false
 # resolvedWhen: 2024-06-25T08:00:00-00:00
@@ -8,6 +8,7 @@ severity: down
 affected:
   - ACP for the cluster
   - ci agents in cluster cijenkinsioagents1
+  - ci agents for bom in cluster cijenkinsioagents1
 section: issue
 
 ---
@@ -18,3 +19,4 @@ Upgrade finished.
 
 [Initial message] -->
 We're (infra team) doing an AKS clusters upgrade from 1.27 to 1.28 the Thuesday 25th of June 2024, starting at 08:00 UTC (10h paris time).
+this will impact the ci.jenkins.io agent in cluster both normal and bom but the VM agents will still be available
