@@ -16,7 +16,10 @@ The ci.jenkins.io controller is running with updated plugins.
 
 [Initial message]
 -->
+[Update]
+The update is taking longer than planned, expect a restart around 16h30 UTC.
 
+[Initial message]
 Wednesday June 26 2024, the `ci.jenkins.io` controller will be put offline and restarted if plugin updates are needed as a result of the plugin security advisory.
 
 The restart may happen between 11:30am UTC and 15:30 UTC.
