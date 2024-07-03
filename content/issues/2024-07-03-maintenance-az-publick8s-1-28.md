@@ -4,7 +4,7 @@ date: 2024-07-04T6:30:00-00:00
 resolved: false
 resolvedWhen: 2024-07-04T9:00:00-00:00
 # Possible severity levels: down, disrupted, notice
-severity: down
+severity: notice
 affected:
   - accounts.jenkins.io
   - admin.accounts.jenkins.io
