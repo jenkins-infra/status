@@ -37,7 +37,7 @@ section: issue
 [Final Message]
 The operation finished successfully at 7:15am UTC.
 
-More details on <https://github.com/jenkins-infra/helpdesk/issues/3948#issuecomment-1991181964>.
+More details on <https://github.com/jenkins-infra/helpdesk/issues/4144#issuecomment-2196274746>.
 
 [Initial message]
 We're doing an publick8s AZ cluster upgrade from 1.27 to 1.28 tomorrow, 4th of July 2024, starting at 6:30 UTC (8h30 paris time, 12h00 IST).
