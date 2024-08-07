@@ -1,7 +1,7 @@
 ---
 title: ldap.jio and repo.azure.jio workloads migration to arm64 (publick8s cluster)
 date: 2024-07-05T14:30:00-00:00
-resolved: false
+resolved: true
 resolvedWhen: 2024-07-05T15:30:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: disrupted
