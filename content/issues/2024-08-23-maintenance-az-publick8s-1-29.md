@@ -1,8 +1,8 @@
 ---
 title: Update Azure AKS cluster `publick8s` to 1.29
 date: 2024-08-23T09:00:00-00:00
-resolved: false
-resolvedWhen: 2024-08-23T10:00:00-00:00
+resolved: true
+resolvedWhen: 2024-08-23T09:40:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: disrupted
 affected:
