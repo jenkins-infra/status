@@ -1,8 +1,8 @@
 ---
-title: Update Center Brownout (1)
-date: 2024-09-06T07:00:00-00:00
-resolved: true
-resolvedWhen: 2024-09-06T08:00:00-00:00
+title: Update Center Brownout (2)
+date: 2024-09-09T14:00:00-00:00
+resolved: false
+resolvedWhen: 2024-09-09T15:00:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: notice
 affected:
@@ -10,7 +10,7 @@ affected:
 section: issue
 ---
 
-Friday 6 September 2024 at 07:00am UTC, the service <https://updates.jenkins.io> will switch its implementation to a new system during 1 hour.
+Monday 9 September 2024 at 02:00pm UTC, the service <https://updates.jenkins.io> will switch its implementation to a new system during 1 hour.
 
 All Jenkins users are impacted but should not see any functional change.
 
