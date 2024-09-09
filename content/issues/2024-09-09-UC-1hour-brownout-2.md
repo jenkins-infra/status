@@ -1,8 +1,8 @@
 ---
 title: Update Center Brownout (2)
 date: 2024-09-09T14:00:00-00:00
-resolved: false
-resolvedWhen: 2024-09-09T15:00:00-00:00
+resolved: true
+resolvedWhen: 2024-09-09T15:05:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: notice
 affected:
