@@ -1,8 +1,8 @@
 ---
 title: Azure VMs outage
 date: 2024-09-09T15:00:00-00:00
-resolved: false
-resolvedWhen: 2024-09-12T15:05:00-00:00
+resolved: true
+resolvedWhen: 2024-09-13T21:30:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: disrupted
 affected:
@@ -12,6 +12,13 @@ affected:
   - infra.ci.jenkins.io
 section: issue
 ---
+
+[Final message]
+
+Azure did fix the problem in two steps:
+
+- Additional capacity added in US East 2 the 12 September
+- Software fix the 13 September
 
 [Update on 2024-09-10]
 
