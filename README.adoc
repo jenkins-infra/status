@@ -104,7 +104,7 @@ You can now execute the website locally:
 
 [source,bash]
 --
-docker compose up --build --force-recreate
+RUN_AS_USER=$(id -u):$(id -g) docker compose up --build --force-recreate
 --
 
 You can then access it at http://localhost:1313/.
