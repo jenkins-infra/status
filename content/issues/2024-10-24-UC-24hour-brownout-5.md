@@ -1,7 +1,7 @@
 ---
 title: Update Center Brownout (5)
 date: 2024-10-24T10:00:00-00:00
-resolved: false
+resolved: true
 resolvedWhen: 2024-10-25T10:00:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: notice
