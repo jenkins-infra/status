@@ -1,5 +1,5 @@
 x-base: &base
-  image: hugomods/hugo:ci-0.95.0
+  image: hugomods/hugo:ci-0.128.0
   volumes:
     - .:/src
 
