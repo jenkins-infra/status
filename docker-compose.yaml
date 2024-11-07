@@ -1,9 +1,15 @@
+x-base: &base
+  image: hugomods/hugo:ci-0.128.0
+  volumes:
+    - .:/src
+
 services:
   status:
-    # "ext-" for the Hugo extended edition including git (https://github.com/klakegg/docker-hugo/blob/master/README.md#hugo-extended-edition)
-    image: klakegg/hugo:0.95.0-ext-asciidoctor
-    volumes:
-      - .:/src
+    <<: *base
     ports:
       - 1313:1313
-    command: "serve --cleanDestinationDir --disableFastRender --printPathWarnings --printMemoryUsage --verbose --verboseLog --noHTTPCache"
+    command: "hugo serve --bind 0.0.0.0 --cleanDestinationDir --disableFastRender --printPathWarnings --printMemoryUsage --noHTTPCache"
+  build:
+    <<: *base
+    profiles:
+      - donotstart
