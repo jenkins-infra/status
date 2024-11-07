@@ -14,39 +14,38 @@ scms:
 
 sources:
   # Get Hugo Version from Github Releases
-  getLatestDockerHugoVersion:
+  getLatestVersion:
     kind: githubrelease
     name: Get the latest hugo version
     spec:
-      owner: "klakegg"
-      repository: "docker-hugo"
+      owner: gohugoio
+      repository: hugo
       token: "{{ requiredEnv .github.token }}"
-      username: "{{ .github.username }}"
-      versionfilter:
-        kind: latest
+    transformers:
+      - trimprefix: v
 
 conditions:
   checkIfDockerImageIsPublished:
-    name: "Test if the docker image 'klakegg/hugo' is available on the DockerHub registry"
+    name: "Test if the docker image 'hugomods/hugo:ci-<version>' is available on the DockerHub registry"
+    sourceid: getLatestVersion
     transformers:
-      - addsuffix: "-ext-asciidoctor"
-    sourceid: getLatestDockerHugoVersion
+      - addprefix: 'ci-'
     kind: dockerimage
     spec:
-      image: "klakegg/hugo"
+      image: "hugomods/hugo"
       architecture: amd64
       # Tag comes from the sourceid (+ transformation)
 
 targets:
   updateDockerComposeFile:
-    transformers:
-      - addprefix: "klakegg/hugo:"
-      - addsuffix: "-ext-asciidoctor"
     name: "Update Hugo version in docker image name in docker-compose.yaml"
+    transformers:
+      - addprefix: "hugomods/hugo:ci-"
     kind: yaml
     spec:
+      engine: yamlpath
       file: docker-compose.yaml
-      key: services.status.image
+      key: $.x-base.image
     scmid: default
   updateNetlifyConfig:
     kind: file
@@ -54,21 +53,14 @@ targets:
     spec:
       file: netlify.toml
       matchpattern: "HUGO_VERSION = .*"
-      content: 'HUGO_VERSION = "{{ source `getLatestDockerHugoVersion` }}"'
-    scmid: default
-  updateGitHubWorkflow:
-    kind: yaml
-    name: "Update Hugo version in the Netlify configuration file"
-    spec:
-      file: .github/workflows/hugo.yaml
-      key: jobs.build.steps[1].with.version
+      content: 'HUGO_VERSION = "{{ source `getLatestVersion` }}"'
     scmid: default
 
 actions:
   chart:
     kind: github/pullrequest
     scmid: default
-    title: Bump Hugo version to {{ source `getLatestDockerHugoVersion` }}
+    title: Bump Hugo version to {{ source `getLatestVersion` }}
     spec:
       labels:
         - dependencies
