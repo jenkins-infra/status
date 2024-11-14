@@ -521,3 +521,7 @@ security:
       - ^go$
       - ^npx$
       - ^postcss$
+      - ^git$
+
+ignoreLogs:
+  - 'warning-goldmark-raw-html'
