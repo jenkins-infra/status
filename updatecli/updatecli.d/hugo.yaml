@@ -45,7 +45,7 @@ targets:
     spec:
       engine: yamlpath
       file: docker-compose.yaml
-      key: $.x-base.image
+      key: $.services.status.image
     scmid: default
   updateNetlifyConfig:
     kind: file

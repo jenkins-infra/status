@@ -8,5 +8,10 @@ jobs:
         with:
           # this is needed to checkout theme which normally come from separate git repository
           submodules: true
-      - name: Check site can be built with the docker compose image
-        run: docker compose --profile=donotstart up build
+      - name: Check site can be started in background with docker compose and work as expected
+        run: |
+          docker compose up --detach
+          sleep 5
+          curl --fail --verbose http://localhost:1313 --output /dev/null
+      - name: Check hugo binary is present and can be executed (inside container)
+        run: docker compose exec status hugo version
