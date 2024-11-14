@@ -1,15 +1,8 @@
-x-base: &base
-  image: hugomods/hugo:ci-0.128.0
-  volumes:
-    - .:/src
-
 services:
   status:
-    <<: *base
+    image: hugomods/hugo:ci-0.128.0
+    volumes:
+      - .:/src
     ports:
       - 1313:1313
     command: "hugo serve --bind 0.0.0.0 --cleanDestinationDir --disableFastRender --printPathWarnings --printMemoryUsage --noHTTPCache"
-  build:
-    <<: *base
-    profiles:
-      - donotstart
