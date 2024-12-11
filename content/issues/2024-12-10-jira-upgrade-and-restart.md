@@ -1,8 +1,8 @@
 ---
 title: Jira (issues.jenkins.io) upgrade and restart
 date: 2024-12-11T00:00:00-00:00
-resolved: false
-resolvedWhen: 2024-12-11T00:59:00-00:00
+resolved: true
+resolvedWhen: 2024-12-11T00:15:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: down
 affected:
