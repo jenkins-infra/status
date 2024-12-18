@@ -1,8 +1,8 @@
 ---
 title: Disruption of mirror selections on get.jenkins.io and Update Center
 date: 2024-12-05T13:00:00-00:00
-resolved: false
-# resolvedWhen: 2024-12-06T13:00:00-00:00
+resolved: true
+resolvedWhen: 2024-12-16T07:40:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: disrupted
 affected:
