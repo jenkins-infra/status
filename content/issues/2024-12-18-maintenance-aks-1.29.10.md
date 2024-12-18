@@ -1,8 +1,8 @@
 ---
 title: AKS cluster upgrade to 1.29.10 (patch)
 date: 2024-12-18T09:45:00-00:00
-resolved: false
-resolvedWhen: 2024-12-18T10:45:00-00:00
+resolved: true
+resolvedWhen: 2024-12-18T14:00:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: disrupted
 affected:
