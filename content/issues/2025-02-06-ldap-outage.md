@@ -16,3 +16,4 @@ section: issue
 ---
 
 ldap service is down so no authentification for Jira, Artifactory, or Jenkins controllers.
+[Help desk 4531](https://github.com/jenkins-infra/helpdesk/issues/4531) is tracking progress on the issue.
