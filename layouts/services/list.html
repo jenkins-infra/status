@@ -24,7 +24,7 @@
         <div>
           {{ range .Paginator.Pages }}
           <button type="button">
-            <a href="{{ .Params.Service.URL }}">{{ .Title }}</a>
+            <a href="{{ .Params.Service.URL }}" style="color: black;">{{ .Title }}</a>
           </button>
           {{ end }}
         </div>
