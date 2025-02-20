@@ -1,8 +1,8 @@
 ---
 title: "[publick8s cluster] Azure publick8s Upgrade to Kubernetes 1.30.7"
 date: 2025-02-20T13:30:00-00:00
-resolved: false
-#resolvedWhen: 2025-02-20T14:30:00-00:00
+resolved: true
+resolvedWhen: 2025-02-20T14:10:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: disrupted
 affected:
@@ -34,6 +34,10 @@ affected:
   - www.jenkins.io
 section: issue
 ---
+
+[Final Message]
+upgrade went well but we saw an outage on update center for about 2 to 3 mn
+we will analyse further the logs to try to understand were it's coming from
 
 [Initial Message]
 Thurday 20 February 2025, at 01:30PM UTC, we'll upgrade the AKS(Azure) cluster  `publick8s` to Kubernetes 1.30.7. It should take between 60 and 120 min.
