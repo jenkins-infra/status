@@ -11,8 +11,9 @@ affected:
   - github-comment-ops
 section: issue
 ---
+
 [Final Message]
-Upgrade went well, just had to wait for the infra.ci mounting volume : `Warning  FailedAttachVolume  5m35s  attachdetach-controller  Multi-Attach error for volume "jenkins-infra-pv" Volume is already exclusively attached to one node and can't be attached to another`
+Upgrade went well. Had to wait for the infra.ci mounting volume : `Warning  FailedAttachVolume  5m35s  attachdetach-controller  Multi-Attach error for volume "jenkins-infra-pv" Volume is already exclusively attached to one node and can't be attached to another`
 but seems faster than before.
 
 [Initial Message]
