@@ -1,6 +1,6 @@
 services:
   status:
-    image: hugomods/hugo:ci-0.146.5
+    image: hugomods/hugo:ci-0.146.7
     volumes:
       - .:/src
     ports:
