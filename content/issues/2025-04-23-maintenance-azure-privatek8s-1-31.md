@@ -1,8 +1,8 @@
 ---
 title: "[privatek8s cluster] Azure privatek8s Upgrade to Kubernetes 1.31.6"
 date: 2025-04-23T12:30:00-00:00
-resolved: false
-resolvedWhen: 2025-04-23T12:30:00-00:00
+resolved: true
+resolvedWhen: 2025-04-23T13:00:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: disrupted
 affected:
