@@ -14,6 +14,6 @@ section: issue
 
 Tuesday 29 April 2025, at 08:00am UTC, the cluster  `privatek8s` will be migrated between Azure subscriptions.
 
-Expect a full downtime of infra.ci.jenkins.io and release.ci.jenkins.io from 15min up to 2 hours.
+Expect a full downtime of infra.ci.jenkins.io and release.ci.jenkins.io from 2 hours up to 8 hours.
 
 More details in <https://github.com/jenkins-infra/helpdesk/issues/4250>.
