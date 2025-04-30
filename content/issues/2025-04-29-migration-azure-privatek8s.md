@@ -1,8 +1,8 @@
 ---
 title: "[privatek8s cluster] Migrate to another Azure subscription"
 date: 2025-04-29T08:00:00-00:00
-resolved: false
-resolvedWhen: 2025-04-29T10:00:00-00:00
+resolved: true
+resolvedWhen: 2025-04-29T16:00:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: disrupted
 affected:
