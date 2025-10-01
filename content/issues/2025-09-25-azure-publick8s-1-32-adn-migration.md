@@ -1,8 +1,8 @@
 ---
 title: "Azure cluster publick8s migrated to a new location and upgraded to Kubernetes 1.32"
 date: 2025-09-25T11:30:00-00:00
-resolved: false
-resolvedWhen: 2025-09-25T15:30:00-00:00
+resolved: true
+resolvedWhen: 2025-09-26T09:30:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: disrupted
 affected:
@@ -35,7 +35,17 @@ affected:
 section: issue
 ---
 
-Thursday 25 September 2025, starting at 11:30PM UTC, we'll perform a migration + upgrade of the AKS(Azure) cluster `publick8s` to a new location and to Kubernetes 1.32.
+[Final Message]
+Outage finished on Friday 26 September 2025 at 09:35am UTC and post mortem published: <https://github.com/jenkins-infra/helpdesk/issues/4813#issuecomment-3339518665>.
+
+[Update]
+Friday 26 September 2025 at 09:35am UTC: ongoing production outage on the cluster (unexpected side effect of the migration): <https://github.com/jenkins-infra/helpdesk/issues/4813>.
+
+[Update]
+Migration was finished on Thursday 25 September 2025 at 03:30PM UTC. See <https://github.com/jenkins-infra/helpdesk/issues/4617#issuecomment-3334826339>.
+
+[Initial Message]
+Thursday 25 September 2025, starting at 11:30AM UTC, we'll perform a migration + upgrade of the AKS(Azure) cluster `publick8s` to a new location and to Kubernetes 1.32.
 
 The expected impacts are:
 
