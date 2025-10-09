@@ -17,3 +17,5 @@ we did a refresh of the 3 nodes of publick8s but were impacted with an azure out
 
 [Initial Message] -->
 we are encoutering an outage on get.jenkins.io and updates.jenkins.io ou publick8s cluster have problems that azure doesn't acknowledge, probably related to a azure outage.
+
+see https://github.com/jenkins-infra/helpdesk/issues/4827 for informations
