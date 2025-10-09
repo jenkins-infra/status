@@ -1,7 +1,7 @@
 ---
 title: Outage on get.jenkins.io and updates.jenkins.io
 date: 2025-10-09T07:08:20-00:00
-resolved: fale
+resolved: false
 # resolvedWhen: 2025-10-09T07:08:20-00:00
 # Possible severity levels: down, disrupted, notice
 severity: down
