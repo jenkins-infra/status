@@ -14,6 +14,6 @@ section: issue
 The error has been identified and a fix (token rotation) has immediately been applied. Service is back to normal.
 
 [Initial Message]
-We are encoutering an outage on incrementals.jenkins.io, currently investigating.
+We are encountering an outage on incrementals.jenkins.io, currently investigating.
 
 More info at https://github.com/jenkins-infra/helpdesk/issues/4840
