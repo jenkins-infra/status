@@ -15,6 +15,6 @@ section: issue
 The outage seems resolved https://github.com/jenkins-infra/helpdesk/issues/4827
 
 [Initial Message]
-we are encoutering an outage on get.jenkins.io and updates.jenkins.io ou publick8s cluster have problems that azure doesn't acknowledge, probably related to a azure outage.
+we are encountering an outage on get.jenkins.io and updates.jenkins.io our publick8s cluster. We are seeing problems that azure doesn't acknowledge, probably related to an Azure outage.
 
-see https://github.com/jenkins-infra/helpdesk/issues/4827 for informations
+see https://github.com/jenkins-infra/helpdesk/issues/4827 for information
