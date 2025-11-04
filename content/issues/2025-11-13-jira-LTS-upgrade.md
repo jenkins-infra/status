@@ -2,7 +2,7 @@
 title: Jira (issues.jenkins.io) LTS upgrade maintenance window
 date: 2025-11-13T16:00:00-00:00
 resolved: false
-resolvedWhen: 2025-11-13T22:00:00-00:00
+# resolvedWhen: 2025-11-13T22:00:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: notice
 affected:
