@@ -1,5 +1,5 @@
 ---
-title: Azure outage on the "*.ci.jenkins.io" private controllers
+title: "Azure outage on the '*.ci.jenkins.io' private controllers"
 date: 2025-10-29T15:45:00-00:00
 resolved: true
 resolvedWhen: 2025-10-30T00:05:00-00:00
