@@ -2,7 +2,7 @@
 title: CloudFlare outage
 date: 2025-11-18T11:48:00-00:00
 resolved: true
-resolvedWhen: 2025-11-19T28:00:00-00:00
+resolvedWhen: 2025-11-18T19:30:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: disrupted
 affected:
