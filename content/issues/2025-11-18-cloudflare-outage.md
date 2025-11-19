@@ -4,7 +4,7 @@ date: 2025-11-18T11:48:00-00:00
 resolved: true
 resolvedWhen: 2025-11-19T28:00:00-00:00
 # Possible severity levels: down, disrupted, notice
-severity: notice
+severity: disrupted
 affected:
   - updates.jenkins.io
   - Element channels
