@@ -10,6 +10,6 @@ affected:
 section: issue
 ---
 
-All Jira issues for Jenkins core are being migrated to GitHub on Monday 24th November.
+All Jira issues for Jenkins core are currently being migrated to GitHub.
 
 More details in <https://github.com/jenkinsci/jenkins/issues/11301>.
