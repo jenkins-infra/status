@@ -1,8 +1,8 @@
 ---
 title: "[ci.jenkins.io container agents] AWS EKS Upgrade to Kubernetes 1.33.5"
 date: 2025-12-04T12:00:00-00:00
-resolved: false
-# resolvedWhen: 2025-02-19T09:00:00-00:00
+resolved: true
+resolvedWhen: 2025-12-04T14:30:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: disrupted
 affected:
@@ -12,9 +12,9 @@ affected:
 section: issue
 ---
 
-<!-- [Final Message]
+[Final Message]
 The upgrade went well, all tests are green.
- -->
+
 [Initial Message]
 Thursday 4 December 2025, at 12:00 UTC, we'll upgrade the EKS(AWS) cluster hosting ci.jenkins.io's container agents and Artifact Caching proxy to Kubernetes 1.33.5
 
