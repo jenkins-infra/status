@@ -12,7 +12,7 @@ affected:
 section: issue
 ---
 
-Thursday 11 December 2025 at 14:30 UTC, we'll upgrade the AKS(Azure) cluster  `privatek8s` to Kubernetes 1.33.5. It should take between 30 and 60 min.
+Thursday 11 December 2025 at 15:30 UTC, we'll upgrade the AKS(Azure) cluster  `privatek8s` to Kubernetes 1.33.5. It should take between 30 and 60 min.
 
 Expect multiple restarts and downtimes for the infra.ci.jenkins.io and release.ci.jenkins.io controllers along with the github-comment-ops bots.
 
