@@ -1,5 +1,5 @@
 ---
-title: "[privatek8s cluster] Azure privatek8s Upgrade to Kubernetes 1.31.6"
+title: "[privatek8s cluster] Azure privatek8s Upgrade to Kubernetes 1.33.5"
 date: 2025-12-11T14:30:00-00:00
 resolved: false
 # resolvedWhen: 2025-12-11T14:30:00-00:00
