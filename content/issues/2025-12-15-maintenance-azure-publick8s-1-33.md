@@ -70,4 +70,4 @@ Temporary disruptions (slow requests or outage of a few minutes) on:
 - uplink.jenkins.io
 - www.jenkins.io
 
-More details in <https://github.com/jenkins-infra/helpdesk/issues/4546#issuecomment-2674545933>.
+More details in <https://github.com/jenkins-infra/helpdesk/issues/4820#issuecomment-3548729217>.
