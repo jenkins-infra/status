@@ -40,7 +40,7 @@ section: issue
 upgrade went well, no impact on production.
 
 [Initial Message] -->
-Thursday 24 April 2025, at 07:30PM UTC, we'll upgrade the AKS(Azure) cluster  `publick8s` to Kubernetes 1.33.5. It should take between 60 and 120 min.
+Monday 15 December 2025 at 08:30PM UTC, we'll upgrade the AKS(Azure) cluster  `publick8s` to Kubernetes 1.33.5. It should take between 60 and 120 min.
 
 The expected impacts are:
 
