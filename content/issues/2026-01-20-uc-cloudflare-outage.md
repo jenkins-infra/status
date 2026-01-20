@@ -1,8 +1,8 @@
 ---
 title: Update Center slow due to CloudFlare outage
 date: 2026-01-20T07:30:00-00:00
-resolved: false
-# resolvedWhen: 2026-01-20T16:30:00-00:00
+resolved: true
+resolvedWhen: 2026-01-20T09:30:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: disrupted
 affected:
@@ -10,16 +10,12 @@ affected:
 section: issue
 ---
 
-<!--
-Final message:
-CloudFlare incident has been resolved:
+[Final Message]
+CloudFlare maintenance is finished: we've enabled the East America mirror as it is now responding as expected.
 
-> Cloudflare services are currently operating normally. We are no longer observing elevated errors or latency across the network.
 
-Initial message:
--->
-
-CloudFlare is performing a maintenance (https://www.cloudflarestatus.com/incidents/y5xbgk3fh95y) with re-routed traffic.
+[Initial Message]
+CloudFlare is performing a maintenance ([https://www.cloudflarestatus.com/incidents/y5xbgk3fh95y](https://www.cloudflarestatus.com/incidents/t1sp3rqqpxcj)) with re-routed traffic.
 Since 07:30 UTC, our monitoring detected a lot of timeouts for the Update Center requests targeted at our East US mirror
 due to the re-routing latency.
 
