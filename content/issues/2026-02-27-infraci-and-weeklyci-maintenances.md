@@ -13,6 +13,8 @@ section: issue
 Operation completed successfully: -->
 
 [Initial Message]
-Friday February 27 2026, starting at 09:30 UTC, the Jenkins controllers and agents on weekly.ci.jenkins.io and infra.ci.jenkins.io will be upgraded to use JDK25 instead of JDK21.
+Friday February 27 2026, starting at 09:30 UTC, the Jenkins controllers and agents on weekly.ci.jenkins.io and infra.ci.jenkins.io will be upgraded to use JDK25 at runtime instead of JDK21.
 
 This operation will require controller restarts and agent reconnections. A short service disruption is expected during the maintenance window.
+
+See more details at https://github.com/jenkins-infra/helpdesk/issues/4941
