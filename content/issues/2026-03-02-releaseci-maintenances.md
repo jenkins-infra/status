@@ -1,7 +1,7 @@
 ---
 title: Maintenance on release.ci.jenkins.io
 date: 2026-03-02T09:00:00-00:00
-resolved: false
+resolved: true
 resolvedWhen: 2026-03-02T10:00:00-00:00
 severity: notice
 affected:
