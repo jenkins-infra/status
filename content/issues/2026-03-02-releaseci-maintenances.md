@@ -12,7 +12,7 @@ section: issue
 Operation completed successfully: -->
 
 [Initial Message]
-Friday  2026, starting at 09:00 UTC, the Jenkins controllers and agents on release.ci.jenkins.io will be upgraded to use JDK25 at runtime instead of JDK21.
+02 March 2026, starting at 09:00 UTC, the Jenkins controllers and agents on release.ci.jenkins.io will be upgraded to use JDK25 at runtime instead of JDK21.
 
 This operation will require controller restarts and agent reconnections. A short service disruption is expected during the maintenance window.
 
