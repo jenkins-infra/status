@@ -1,5 +1,5 @@
 ---
-title: Maintenance on release.ci.jenkins.io
+title: Maintenance on ci.jenkins.io
 date: 2026-03-10T09:00:00-00:00
 resolved: false
 # resolvedWhen: 2026-03-02T10:00:00-00:00
