@@ -1,7 +1,7 @@
 ---
 title: Maintenance on ci.jenkins.io
 date: 2026-03-10T09:00:00-00:00
-resolved: false
+resolved: true
 resolvedWhen: 2026-03-10T11:00:00-00:00
 severity: notice
 affected:
