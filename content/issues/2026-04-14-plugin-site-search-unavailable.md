@@ -12,6 +12,9 @@ section: issue
 <!-- [Final message] -->
 
 [Update]
+We've disabled the search temporarily to ensure plugins.jenkins.io stays up-to-date, fixing the changelog content problem.
+
+[Update]
 
 Plugins changelogs seems broken since the 13 April 2026 and only reports old versions of plugins while new versions are available.
 
