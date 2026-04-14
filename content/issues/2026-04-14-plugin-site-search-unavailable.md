@@ -1,5 +1,5 @@
 ---
-title: Plugin site search unavailable
+title: 'Problems on plugins.jenkins.io: search and changelogs'
 date: 2026-04-14T11:00:00-00:00
 resolved: false
 # Possible severity levels: down, disrupted, notice
@@ -10,6 +10,10 @@ section: issue
 ---
 
 <!-- [Final message] -->
+
+[Update]
+
+Plugins changelogs seems broken since the 13 April 2026 and only reports old versions of plugins while new versions are available.
 
 [Initial message]
 Plugin search on [plugins.jenkins.io](https://plugins.jenkins.io/) is currently not returning results. Individual plugin pages are still accessible via direct URL (e.g. https://plugins.jenkins.io/git/).
