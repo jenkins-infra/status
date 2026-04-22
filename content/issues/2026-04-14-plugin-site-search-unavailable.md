@@ -1,7 +1,8 @@
 ---
 title: 'Problems on plugins.jenkins.io: search and changelogs'
 date: 2026-04-14T11:00:00-00:00
-resolved: false
+resolved: true
+resolvedWhen: 2026-04-20T17:32:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: disrupted
 affected:
@@ -9,7 +10,9 @@ affected:
 section: issue
 ---
 
-<!-- [Final message] -->
+[Final message]
+Algolia unblocked our application and API key. We re-enabled search and index update.
+Details in https://github.com/jenkins-infra/helpdesk/issues/5066#issuecomment-4282967667.
 
 [Update]
 We've disabled the search temporarily to ensure plugins.jenkins.io stays up-to-date, fixing the changelog content problem.
