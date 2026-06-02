@@ -13,7 +13,7 @@ section: issue
 upgrade went well, no impact on production.
 
 [Initial Message] -->
-Wednesday 03 June 2026 at 09:30AM UTC, we'll upgrade the AKS(Azure) cluster  `publick8s` to Kubernetes 1.33.7. It should take between 60 and 120 min.
+Wednesday 03 June 2026 at 09:30AM UTC, we'll upgrade the AKS(Azure) cluster  `publick8s` to Kubernetes 1.34.7. It should take between 60 and 120 min.
 
 The expected impacts are:
 
