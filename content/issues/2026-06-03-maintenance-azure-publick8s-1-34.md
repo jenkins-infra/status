@@ -36,4 +36,7 @@ Temporary disruptions (slow requests or outage of a few minutes) on:
 - javadoc.jenkins.io
 - jenkins-wiki-exporter.jenkins.io
 - plugins.jenkins.io
-- plugin-health.jenkins.io
+- plugin-health.jenkins.io 
+
+More details in <https://github.com/jenkins-infra/helpdesk/issues/4908#issuecomment-4603087452>.
+
