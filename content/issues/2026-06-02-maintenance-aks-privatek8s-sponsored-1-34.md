@@ -16,7 +16,7 @@ section: issue
 The upgrade went well, all tests are green.
 
 [Initial Message]
-Tuesday 2nd June 2025, at 10:00am UTC, we'll upgrade the AKS cluster hosting infra.jenkins.io, release.jenkins.io and the github-comment-ops to Kubernetes 1.34.
+Tuesday 2nd June 2025, at 08:00am UTC, we'll upgrade the AKS cluster hosting infra.jenkins.io, release.jenkins.io and the github-comment-ops to Kubernetes 1.34.
 
 All applications hosted in this controller will be offline until the upgrade is finished. We expect 60 to 90 minutes of operations.
 
