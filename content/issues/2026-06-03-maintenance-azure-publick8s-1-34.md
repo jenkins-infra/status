@@ -1,7 +1,7 @@
 ---
 title: "[publick8s cluster] Azure publick8s Upgrade to Kubernetes 1.34.7"
 date: 2026-06-03T09:30:00-00:00
-resolved: false
+resolved: true
 resolvedWhen: 2026-06-03T10:14:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: disrupted
