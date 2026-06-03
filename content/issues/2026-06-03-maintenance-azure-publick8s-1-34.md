@@ -1,15 +1,15 @@
 ---
 title: "[publick8s cluster] Azure publick8s Upgrade to Kubernetes 1.34.7"
 date: 2026-06-03T09:30:00-00:00
-resolved: false
-# resolvedWhen: 2025-12-15T08:30:00-00:00
+resolved: true
+resolvedWhen: 2026-06-03T10:14:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: disrupted
 affected:
 section: issue
 ---
 
-<!-- [Final Message]
+[Final Message] -->
 upgrade went well, no impact on production.
 
 [Initial Message] -->
@@ -39,4 +39,3 @@ Temporary disruptions (slow requests or outage of a few minutes) on:
 - plugin-health.jenkins.io 
 
 More details in <https://github.com/jenkins-infra/helpdesk/issues/4908#issuecomment-4603087452>.
-
