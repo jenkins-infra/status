@@ -2,6 +2,12 @@
   "ignorePatterns": [
     {
       "pattern": "^https://trusted.ci.jenkins.io"
+    },
+    {
+      "pattern": "^https://admin.accounts.ci.jenkins.io"
+    },
+    {
+      "pattern": "^https://rating.ci.jenkins.io"
     }
   ]
 }
