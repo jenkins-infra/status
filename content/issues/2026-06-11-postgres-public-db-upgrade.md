@@ -2,7 +2,7 @@
 title: PostgreSQL Database upgrade
 date: 2026-06-11T07:00:00-00:00
 resolved: false
-resolvedWhen: 2026-06-11T07:00:00-00:00
+resolvedWhen: 2026-06-11T09:00:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: down
 affected:
