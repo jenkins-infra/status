@@ -1,5 +1,5 @@
 ---
-title: PostgreSQL "Public" Database upgrade
+title: PostgreSQL Database upgrade
 date: 2026-06-11T07:00:00-00:00
 resolved: false
 resolvedWhen: 2026-06-11T07:00:00-00:00
