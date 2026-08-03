@@ -1,8 +1,8 @@
 ---
 title: s390x agent down on ci.jenkins.io
 date: 2026-08-03T17:50:00-00:00
-resolved: false
-resolvedWhen: 2026-08-03T19:00:00-00:00
+resolved: true
+resolvedWhen: 2026-08-03T18:45:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: down
 affected:
