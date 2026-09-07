@@ -1,5 +1,5 @@
 ---
-title: 'Brownout (temporary disruption) of "TUNA" mirror'
+title: 'Brownout (temporary disruption) of TUNA mirror'
 date: 2026-09-07T13:00:00-00:00
 resolved: false
 resolvedWhen: 2026-09-07T18:00:00-00:00
