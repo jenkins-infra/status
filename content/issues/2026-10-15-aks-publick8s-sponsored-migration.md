@@ -47,7 +47,7 @@ Migration was finished on Thursday 25 September 2025 at 03:30PM UTC. See <https:
 
 [Initial Message]
 -->
-Starting at 12:00 UTC on Thursday, 15 October 2026, we'll perform a migration of the AKS (Azure) cluster `publick8s` from CDF subscription hosting our public services to the new `publick8s-sponsored` cluster in our Azure Sponsored subcription.
+Starting at 12:00 UTC on Thursday, 15 October 2026, we'll migrate the `publick8s` AKS cluster (Azure), which hosts our public services, from the CDF subscription to the new `publick8s-sponsored` cluster in our Azure Sponsored subscription.
 
 The expected impacts are:
 
