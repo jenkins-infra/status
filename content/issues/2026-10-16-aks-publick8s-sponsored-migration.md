@@ -1,8 +1,8 @@
 ---
 title: "Migration of Azure cluster publick8s-sponsored to a new subscription"
-date: 2025-10-15T12:00:00-00:00
+date: 2025-10-16T12:00:00-00:00
 resolved: false
-# resolvedWhen: 2025-10-15T12:00:00-00:00
+# resolvedWhen: 2025-10-16T12:00:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: disrupted
 # find ~/oss/kubernetes-management/config/publick8s/ -type f -exec grep -H 'host:' {} + | grep 'jenkins.io' | sed -E 's/.*host: *([^ ]+).*/  - \1/' | sort -u
@@ -47,7 +47,7 @@ Migration was finished on Thursday 25 September 2025 at 03:30PM UTC. See <https:
 
 [Initial Message]
 -->
-Starting at 12:00 UTC on Thursday, 15 October 2026, we'll migrate the `publick8s` AKS cluster (Azure), which hosts our public services, from the CDF subscription to the new `publick8s-sponsored` cluster in our Azure Sponsored subscription.
+Starting at 12:00 UTC on Friday, 16 October 2026, we'll migrate the `publick8s` AKS cluster (Azure), which hosts our public services, from the CDF subscription to the new `publick8s-sponsored` cluster in our Azure Sponsored subscription.
 
 The expected impacts are:
 
