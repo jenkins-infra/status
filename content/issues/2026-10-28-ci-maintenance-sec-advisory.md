@@ -10,7 +10,7 @@ affected:
 section: issue
 ---
 
-<!-->
+<!--
 [Final Message]
 The ci.jenkins.io controller is back online.
 
