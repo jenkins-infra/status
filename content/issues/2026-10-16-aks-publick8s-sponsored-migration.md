@@ -1,8 +1,8 @@
 ---
 title: "Migration of Azure cluster publick8s-sponsored to a new subscription"
-date: 2025-10-19T16:00:00-00:00
-resolved: false
-# resolvedWhen: 2025-10-16T12:00:00-00:00
+date: 2025-10-19T12:00:00-00:00
+resolved: true
+resolvedWhen: 2025-10-19T14:00:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: disrupted
 # find ~/oss/kubernetes-management/config/publick8s/ -type f -exec grep -H 'host:' {} + | grep 'jenkins.io' | sed -E 's/.*host: *([^ ]+).*/  - \1/' | sort -u

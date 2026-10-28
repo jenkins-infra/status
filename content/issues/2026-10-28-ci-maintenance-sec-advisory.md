@@ -1,8 +1,8 @@
 ---
 title: Maintenance on ci.jenkins.io (Security Advisory)
-date: 2026-10-28T11:30:00-00:00
+date: 2026-10-28T12:30:00-00:00
 resolved: false
-resolvedWhen: 2026-10-28T13:12:00-00:00
+resolvedWhen: 2026-10-28T13:30:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: down
 affected:
