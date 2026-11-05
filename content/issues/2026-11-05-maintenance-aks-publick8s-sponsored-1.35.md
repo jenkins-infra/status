@@ -1,7 +1,7 @@
 ---
 title: "Upgrade of the `publick8s-sponsored` cluster to Kubernetes 1.35"
 date: 2026-11-05T09:00:00-00:00
-resolved: false
+resolved: true
 resolvedWhen: 2026-11-05T10:30:00-00:00
 # Possible severity levels: down, disrupted, notice
 severity: disrupted
@@ -32,12 +32,10 @@ affected:
 section: issue
 ---
 
-<!--
 [Final Message]
 upgrade went well, no impact on production.
 
-[Initial Message] -->
-
+[Initial Message]
 Thursday 05 November 2026 at 09:00AM UTC, we'll upgrade the the Azure AKS cluster  `publick8s` to Kubernetes 1.35.
 The operation is expected to take between 60 and 90 min.
 
